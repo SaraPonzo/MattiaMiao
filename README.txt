@@ -1,2 +1,3 @@
-Carica il contenuto di questa cartella nella root del repository GitHub Pages.
-Apri: https://saraponzo.github.io/On-The-Road/
+On-The-Road — versione aggiornata
+Caricare tutti i file e la cartella assets nella root del repository GitHub Pages.
+Aggiornamento: programma completo delle due giornate di Edimburgo e nuove fotografie locali.
