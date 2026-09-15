@@ -1,1 +1,2243 @@
+<!DOCTYPE html>
+<html><head><title>Scozia on the road</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta name="theme-color" content="#17324E">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Scozia">
+<script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/react-dom.production.min.js","https://unpkg.com/@babel/standalone@7.29.0/babel.min.js":"assets/babel.min.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Scozia">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/6954bf7f-d59f-4076-9a3d-c9835f31d6ac.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/3ff5196e-095e-4632-b6ad-bf2e9f489f94.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/990a7f2e-ee89-4b42-8166-42526881b74d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/b8d8d6e2-2368-45c7-bb79-ca19ea1d75ed.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/6954bf7f-d59f-4076-9a3d-c9835f31d6ac.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/3ff5196e-095e-4632-b6ad-bf2e9f489f94.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/990a7f2e-ee89-4b42-8166-42526881b74d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/b8d8d6e2-2368-45c7-bb79-ca19ea1d75ed.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a37d3a8b-c7d5-40e5-9a86-14daec8bdea1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/864aa9d5-b75f-4a11-8528-36091332f4cd.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/0c11577e-e112-4290-a8cd-1300d87fc750.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/7d0c30c4-3cde-4a63-abb9-3243a1aff732.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/847f1009-868a-4505-beaa-15e4ed725bab.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a37d3a8b-c7d5-40e5-9a86-14daec8bdea1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/864aa9d5-b75f-4a11-8528-36091332f4cd.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/0c11577e-e112-4290-a8cd-1300d87fc750.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/7d0c30c4-3cde-4a63-abb9-3243a1aff732.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/847f1009-868a-4505-beaa-15e4ed725bab.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a37d3a8b-c7d5-40e5-9a86-14daec8bdea1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/864aa9d5-b75f-4a11-8528-36091332f4cd.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/0c11577e-e112-4290-a8cd-1300d87fc750.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/7d0c30c4-3cde-4a63-abb9-3243a1aff732.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/847f1009-868a-4505-beaa-15e4ed725bab.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a37d3a8b-c7d5-40e5-9a86-14daec8bdea1.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/864aa9d5-b75f-4a11-8528-36091332f4cd.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/0c11577e-e112-4290-a8cd-1300d87fc750.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/7d0c30c4-3cde-4a63-abb9-3243a1aff732.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/847f1009-868a-4505-beaa-15e4ed725bab.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/274f37af-61fa-48ec-a2b0-ec0841f53e93.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/7fb8a7a1-c362-46ac-b5c7-fffa435fa4e0.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/274f37af-61fa-48ec-a2b0-ec0841f53e93.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/7fb8a7a1-c362-46ac-b5c7-fffa435fa4e0.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/274f37af-61fa-48ec-a2b0-ec0841f53e93.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/7fb8a7a1-c362-46ac-b5c7-fffa435fa4e0.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/274f37af-61fa-48ec-a2b0-ec0841f53e93.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/7fb8a7a1-c362-46ac-b5c7-fffa435fa4e0.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/274f37af-61fa-48ec-a2b0-ec0841f53e93.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/7fb8a7a1-c362-46ac-b5c7-fffa435fa4e0.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fab1cf0c-d6cc-4e0f-bff4-6aa871109f2e.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/45b15403-97b7-4d6e-a21a-86b8ce8b3f06.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/985dcca0-6d53-4b45-bd38-ee8d7efca5d3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/47031453-92fc-459f-b14b-b99d2d2565ea.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fab1cf0c-d6cc-4e0f-bff4-6aa871109f2e.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/45b15403-97b7-4d6e-a21a-86b8ce8b3f06.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/985dcca0-6d53-4b45-bd38-ee8d7efca5d3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/47031453-92fc-459f-b14b-b99d2d2565ea.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/fab1cf0c-d6cc-4e0f-bff4-6aa871109f2e.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/45b15403-97b7-4d6e-a21a-86b8ce8b3f06.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/985dcca0-6d53-4b45-bd38-ee8d7efca5d3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/47031453-92fc-459f-b14b-b99d2d2565ea.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("assets/fab1cf0c-d6cc-4e0f-bff4-6aa871109f2e.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("assets/45b15403-97b7-4d6e-a21a-86b8ce8b3f06.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("assets/985dcca0-6d53-4b45-bd38-ee8d7efca5d3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("assets/47031453-92fc-459f-b14b-b99d2d2565ea.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>/* required styles */
 
+.leaflet-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-container,
+.leaflet-pane > svg,
+.leaflet-pane > canvas,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+	position: absolute;
+	left: 0;
+	top: 0;
+	}
+.leaflet-container {
+	overflow: hidden;
+	}
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+	  -webkit-user-drag: none;
+	}
+/* Prevents IE11 from highlighting tiles in blue */
+.leaflet-tile::selection {
+	background: transparent;
+}
+/* Safari renders non-retina tile on retina better with this, but Chrome is worse */
+.leaflet-safari .leaflet-tile {
+	image-rendering: -webkit-optimize-contrast;
+	}
+/* hack that prevents hw layers "stretching" when loading new tiles */
+.leaflet-safari .leaflet-tile-container {
+	width: 1600px;
+	height: 1600px;
+	-webkit-transform-origin: 0 0;
+	}
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+	display: block;
+	}
+/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */
+/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */
+.leaflet-container .leaflet-overlay-pane svg {
+	max-width: none !important;
+	max-height: none !important;
+	}
+.leaflet-container .leaflet-marker-pane img,
+.leaflet-container .leaflet-shadow-pane img,
+.leaflet-container .leaflet-tile-pane img,
+.leaflet-container img.leaflet-image-layer,
+.leaflet-container .leaflet-tile {
+	max-width: none !important;
+	max-height: none !important;
+	width: auto;
+	padding: 0;
+	}
+
+.leaflet-container img.leaflet-tile {
+	/* See: https://bugs.chromium.org/p/chromium/issues/detail?id=600120 */
+	mix-blend-mode: plus-lighter;
+}
+
+.leaflet-container.leaflet-touch-zoom {
+	-ms-touch-action: pan-x pan-y;
+	touch-action: pan-x pan-y;
+	}
+.leaflet-container.leaflet-touch-drag {
+	-ms-touch-action: pinch-zoom;
+	/* Fallback for FF which doesn't support pinch-zoom */
+	touch-action: none;
+	touch-action: pinch-zoom;
+}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.leaflet-container {
+	-webkit-tap-highlight-color: transparent;
+}
+.leaflet-container a {
+	-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);
+}
+.leaflet-tile {
+	filter: inherit;
+	visibility: hidden;
+	}
+.leaflet-tile-loaded {
+	visibility: inherit;
+	}
+.leaflet-zoom-box {
+	width: 0;
+	height: 0;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+	z-index: 800;
+	}
+/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */
+.leaflet-overlay-pane svg {
+	-moz-user-select: none;
+	}
+
+.leaflet-pane         { z-index: 400; }
+
+.leaflet-tile-pane    { z-index: 200; }
+.leaflet-overlay-pane { z-index: 400; }
+.leaflet-shadow-pane  { z-index: 500; }
+.leaflet-marker-pane  { z-index: 600; }
+.leaflet-tooltip-pane   { z-index: 650; }
+.leaflet-popup-pane   { z-index: 700; }
+
+.leaflet-map-pane canvas { z-index: 100; }
+.leaflet-map-pane svg    { z-index: 200; }
+
+.leaflet-vml-shape {
+	width: 1px;
+	height: 1px;
+	}
+.lvml {
+	behavior: url(#default#VML);
+	display: inline-block;
+	position: absolute;
+	}
+
+
+/* control positioning */
+
+.leaflet-control {
+	position: relative;
+	z-index: 800;
+	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+	pointer-events: auto;
+	}
+.leaflet-top,
+.leaflet-bottom {
+	position: absolute;
+	z-index: 1000;
+	pointer-events: none;
+	}
+.leaflet-top {
+	top: 0;
+	}
+.leaflet-right {
+	right: 0;
+	}
+.leaflet-bottom {
+	bottom: 0;
+	}
+.leaflet-left {
+	left: 0;
+	}
+.leaflet-control {
+	float: left;
+	clear: both;
+	}
+.leaflet-right .leaflet-control {
+	float: right;
+	}
+.leaflet-top .leaflet-control {
+	margin-top: 10px;
+	}
+.leaflet-bottom .leaflet-control {
+	margin-bottom: 10px;
+	}
+.leaflet-left .leaflet-control {
+	margin-left: 10px;
+	}
+.leaflet-right .leaflet-control {
+	margin-right: 10px;
+	}
+
+
+/* zoom and fade animations */
+
+.leaflet-fade-anim .leaflet-popup {
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+	   -moz-transition: opacity 0.2s linear;
+	        transition: opacity 0.2s linear;
+	}
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+	opacity: 1;
+	}
+.leaflet-zoom-animated {
+	-webkit-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	        transform-origin: 0 0;
+	}
+svg.leaflet-zoom-animated {
+	will-change: transform;
+}
+
+.leaflet-zoom-anim .leaflet-zoom-animated {
+	-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);
+	   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);
+	        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);
+	}
+.leaflet-zoom-anim .leaflet-tile,
+.leaflet-pan-anim .leaflet-tile {
+	-webkit-transition: none;
+	   -moz-transition: none;
+	        transition: none;
+	}
+
+.leaflet-zoom-anim .leaflet-zoom-hide {
+	visibility: hidden;
+	}
+
+
+/* cursors */
+
+.leaflet-interactive {
+	cursor: pointer;
+	}
+.leaflet-grab {
+	cursor: -webkit-grab;
+	cursor:    -moz-grab;
+	cursor:         grab;
+	}
+.leaflet-crosshair,
+.leaflet-crosshair .leaflet-interactive {
+	cursor: crosshair;
+	}
+.leaflet-popup-pane,
+.leaflet-control {
+	cursor: auto;
+	}
+.leaflet-dragging .leaflet-grab,
+.leaflet-dragging .leaflet-grab .leaflet-interactive,
+.leaflet-dragging .leaflet-marker-draggable {
+	cursor: move;
+	cursor: -webkit-grabbing;
+	cursor:    -moz-grabbing;
+	cursor:         grabbing;
+	}
+
+/* marker & overlays interactivity */
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-image-layer,
+.leaflet-pane > svg path,
+.leaflet-tile-container {
+	pointer-events: none;
+	}
+
+.leaflet-marker-icon.leaflet-interactive,
+.leaflet-image-layer.leaflet-interactive,
+.leaflet-pane > svg path.leaflet-interactive,
+svg.leaflet-image-layer.leaflet-interactive path {
+	pointer-events: visiblePainted; /* IE 9-10 doesn't have auto */
+	pointer-events: auto;
+	}
+
+/* visual tweaks */
+
+.leaflet-container {
+	background: #ddd;
+	outline-offset: 1px;
+	}
+.leaflet-container a {
+	color: #0078A8;
+	}
+.leaflet-zoom-box {
+	border: 2px dotted #38f;
+	background: rgba(255,255,255,0.5);
+	}
+
+
+/* general typography */
+.leaflet-container {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	}
+
+
+/* general toolbar styles */
+
+.leaflet-bar {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+	border-radius: 4px;
+	}
+.leaflet-bar a {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	}
+.leaflet-bar a,
+.leaflet-control-layers-toggle {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	}
+.leaflet-bar a:hover,
+.leaflet-bar a:focus {
+	background-color: #f4f4f4;
+	}
+.leaflet-bar a:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	}
+.leaflet-bar a:last-child {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom: none;
+	}
+.leaflet-bar a.leaflet-disabled {
+	cursor: default;
+	background-color: #f4f4f4;
+	color: #bbb;
+	}
+
+.leaflet-touch .leaflet-bar a {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	}
+.leaflet-touch .leaflet-bar a:first-child {
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	}
+.leaflet-touch .leaflet-bar a:last-child {
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	}
+
+/* zoom control */
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+	font: bold 18px 'Lucida Console', Monaco, monospace;
+	text-indent: 1px;
+	}
+
+.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {
+	font-size: 22px;
+	}
+
+
+/* layers control */
+
+.leaflet-control-layers {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	background: #fff;
+	border-radius: 5px;
+	}
+.leaflet-control-layers-toggle {
+	background-image: url("assets/marker-icon.png");
+	width: 36px;
+	height: 36px;
+	}
+.leaflet-retina .leaflet-control-layers-toggle {
+	background-image: url("assets/marker-icon-2x.png");
+	background-size: 26px 26px;
+	}
+.leaflet-touch .leaflet-control-layers-toggle {
+	width: 44px;
+	height: 44px;
+	}
+.leaflet-control-layers .leaflet-control-layers-list,
+.leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+	display: none;
+	}
+.leaflet-control-layers-expanded .leaflet-control-layers-list {
+	display: block;
+	position: relative;
+	}
+.leaflet-control-layers-expanded {
+	padding: 6px 10px 6px 6px;
+	color: #333;
+	background: #fff;
+	}
+.leaflet-control-layers-scrollbar {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-right: 5px;
+	}
+.leaflet-control-layers-selector {
+	margin-top: 2px;
+	position: relative;
+	top: 1px;
+	}
+.leaflet-control-layers label {
+	display: block;
+	font-size: 13px;
+	font-size: 1.08333em;
+	}
+.leaflet-control-layers-separator {
+	height: 0;
+	border-top: 1px solid #ddd;
+	margin: 5px -10px 5px -6px;
+	}
+
+/* Default icon URLs */
+.leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */
+	background-image: url("assets/marker-shadow.png");
+	}
+
+
+/* attribution and scale controls */
+
+.leaflet-container .leaflet-control-attribution {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.8);
+	margin: 0;
+	}
+.leaflet-control-attribution,
+.leaflet-control-scale-line {
+	padding: 0 5px;
+	color: #333;
+	line-height: 1.4;
+	}
+.leaflet-control-attribution a {
+	text-decoration: none;
+	}
+.leaflet-control-attribution a:hover,
+.leaflet-control-attribution a:focus {
+	text-decoration: underline;
+	}
+.leaflet-attribution-flag {
+	display: inline !important;
+	vertical-align: baseline !important;
+	width: 1em;
+	height: 0.6669em;
+	}
+.leaflet-left .leaflet-control-scale {
+	margin-left: 5px;
+	}
+.leaflet-bottom .leaflet-control-scale {
+	margin-bottom: 5px;
+	}
+.leaflet-control-scale-line {
+	border: 2px solid #777;
+	border-top: none;
+	line-height: 1.1;
+	padding: 2px 5px 1px;
+	white-space: nowrap;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.8);
+	text-shadow: 1px 1px #fff;
+	}
+.leaflet-control-scale-line:not(:first-child) {
+	border-top: 2px solid #777;
+	border-bottom: none;
+	margin-top: -2px;
+	}
+.leaflet-control-scale-line:not(:first-child):not(:last-child) {
+	border-bottom: 2px solid #777;
+	}
+
+.leaflet-touch .leaflet-control-attribution,
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+	box-shadow: none;
+	}
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+	border: 2px solid rgba(0,0,0,0.2);
+	background-clip: padding-box;
+	}
+
+
+/* popup */
+
+.leaflet-popup {
+	position: absolute;
+	text-align: center;
+	margin-bottom: 20px;
+	}
+.leaflet-popup-content-wrapper {
+	padding: 1px;
+	text-align: left;
+	border-radius: 12px;
+	}
+.leaflet-popup-content {
+	margin: 13px 24px 13px 20px;
+	line-height: 1.3;
+	font-size: 13px;
+	font-size: 1.08333em;
+	min-height: 1px;
+	}
+.leaflet-popup-content p {
+	margin: 17px 0;
+	margin: 1.3em 0;
+	}
+.leaflet-popup-tip-container {
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	margin-top: -1px;
+	margin-left: -20px;
+	overflow: hidden;
+	pointer-events: none;
+	}
+.leaflet-popup-tip {
+	width: 17px;
+	height: 17px;
+	padding: 1px;
+
+	margin: -10px auto 0;
+	pointer-events: auto;
+
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+	background: white;
+	color: #333;
+	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+	}
+.leaflet-container a.leaflet-popup-close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	font: 16px/24px Tahoma, Verdana, sans-serif;
+	color: #757575;
+	text-decoration: none;
+	background: transparent;
+	}
+.leaflet-container a.leaflet-popup-close-button:hover,
+.leaflet-container a.leaflet-popup-close-button:focus {
+	color: #585858;
+	}
+.leaflet-popup-scrolled {
+	overflow: auto;
+	}
+
+.leaflet-oldie .leaflet-popup-content-wrapper {
+	-ms-zoom: 1;
+	}
+.leaflet-oldie .leaflet-popup-tip {
+	width: 24px;
+	margin: 0 auto;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
+	}
+
+.leaflet-oldie .leaflet-control-zoom,
+.leaflet-oldie .leaflet-control-layers,
+.leaflet-oldie .leaflet-popup-content-wrapper,
+.leaflet-oldie .leaflet-popup-tip {
+	border: 1px solid #999;
+	}
+
+
+/* div icon */
+
+.leaflet-div-icon {
+	background: #fff;
+	border: 1px solid #666;
+	}
+
+
+/* Tooltip */
+/* Base styles for the element that has a tooltip */
+.leaflet-tooltip {
+	position: absolute;
+	padding: 6px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #222;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+	}
+.leaflet-tooltip.leaflet-interactive {
+	cursor: pointer;
+	pointer-events: auto;
+	}
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+	position: absolute;
+	pointer-events: none;
+	border: 6px solid transparent;
+	background: transparent;
+	content: "";
+	}
+
+/* Directions */
+
+.leaflet-tooltip-bottom {
+	margin-top: 6px;
+}
+.leaflet-tooltip-top {
+	margin-top: -6px;
+}
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-top:before {
+	left: 50%;
+	margin-left: -6px;
+	}
+.leaflet-tooltip-top:before {
+	bottom: 0;
+	margin-bottom: -12px;
+	border-top-color: #fff;
+	}
+.leaflet-tooltip-bottom:before {
+	top: 0;
+	margin-top: -12px;
+	margin-left: -6px;
+	border-bottom-color: #fff;
+	}
+.leaflet-tooltip-left {
+	margin-left: -6px;
+}
+.leaflet-tooltip-right {
+	margin-left: 6px;
+}
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+	top: 50%;
+	margin-top: -6px;
+	}
+.leaflet-tooltip-left:before {
+	right: 0;
+	margin-right: -12px;
+	border-left-color: #fff;
+	}
+.leaflet-tooltip-right:before {
+	left: 0;
+	margin-left: -12px;
+	border-right-color: #fff;
+	}
+
+/* Printing */
+
+@media print {
+	/* Prevent printers from removing background-images of controls. */
+	.leaflet-control {
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+		}
+	}
+</style>
+<script src="assets/leaflet.js"></script>
+<style>
+body{margin:0;background:#7FAFD2;font-family:'Outfit',system-ui,sans-serif}
+@media (max-width:520px){.scz-outer{padding:0 !important;background:#000 !important}}
+a{color:#C4553A}a:hover{color:#A34329}
+@keyframes carbounce{0%,100%{transform:translateY(0) scaleX(-1)}50%{transform:translateY(-3px) scaleX(-1)}}
+@keyframes floaty{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-5px)}}
+@keyframes kb{0%{transform:scale(1.02)}100%{transform:scale(1.14)}}
+@keyframes scz-fade{0%{opacity:0}5%{opacity:1}25%{opacity:1}30%{opacity:0}100%{opacity:0}}
+@keyframes drift{0%{transform:translateX(-10px)}100%{transform:translateX(10px)}}
+@keyframes dotblink{0%,100%{opacity:.2}50%{opacity:1}}
+@keyframes scz-rise{0%{opacity:0;transform:translateY(24px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes scz-cardout{0%{opacity:0;transform:rotate(-3deg) translateY(78px) scale(.9)}55%{opacity:1}100%{opacity:1;transform:rotate(-3deg) translateY(0) scale(1)}}
+@keyframes scz-reveal{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes scz-flap{from{transform:rotateX(0)}to{transform:rotateX(178deg)}}
+@keyframes scz-write{from{clip-path:inset(-8% 100% -8% -4%)}to{clip-path:inset(-8% -12% -8% -4%)}}
+@keyframes scz-forward{from{left:8%}to{left:72%}}
+@keyframes scz-seal{0%{opacity:0;transform:rotate(-14deg) scale(1.6)}60%{opacity:1}100%{opacity:1;transform:rotate(-14deg) scale(1)}}
+.scz-pin{background:#F1E7CF;border:2px solid #A8442B;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font:800 13px system-ui,sans-serif;color:#A8442B;box-shadow:0 3px 6px rgba(0,0,0,.3)}
+.scz-pin.active{background:#A8442B;color:#F1E7CF}
+.scz-poi{background:#FDF7E7;border:2px solid #C4553A;border-radius:50%;width:16px;height:16px;box-shadow:0 2px 4px rgba(0,0,0,.3)}
+.scz-poi.gold{border-color:#C9963A;background:#F3E3BE}
+.leaflet-container{font-family:'Nunito Sans',system-ui,sans-serif;background:#A6C8DF}
+</style>
+
+</helmet>
+<div class="scz-outer" style="min-height:100vh;display:flex;align-items:flex-start;justify-content:center;padding:28px 16px;background:radial-gradient(ellipse at 50% 0%,#9DC3DE,#6F9FC6)">
+<x-import component-from-global-scope="IOSDevice" from="assets/ios-frame.jsx#/ios-frame.jsx" title="" dark="{{ isHome }}" hint-size="390px,844px">
+<div style="position:relative;width:100%;height:100%;background:#F1E7CF;overflow:hidden;font-family:'Outfit',system-ui,sans-serif">
+
+  <!-- ============ HOME ============ -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div data-screen-label="Home" style="position:absolute;inset:0;display:flex;flex-direction:column">
+    <div style="position:absolute;inset:0;overflow:hidden">
+      <img src="assets/a9c428dd-5cc7-4cfb-a437-0dc5f1e3ef67.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+      <img src="assets/a9c428dd-5cc7-4cfb-a437-0dc5f1e3ef67.jpg" alt="Highlands" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kb 14s ease-in-out infinite alternate,scz-fade 32s ease-in-out -1.6s infinite">
+      <img src="assets/89e30819-51b0-432e-9093-a644bda516d1.jpg" alt="Old Man of Storr" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:kb 14s ease-in-out infinite alternate,scz-fade 32s ease-in-out 6.4s infinite">
+      <img src="assets/04714011-468e-4fdb-92f9-1cf8d0f9138e.jpg" alt="Scogliere sul mare" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:kb 14s ease-in-out infinite alternate,scz-fade 32s ease-in-out 14.4s infinite">
+      <img src="assets/430e375e-06dd-4939-a17c-ebb0a50c355b.jpg" alt="Edimburgo all'alba" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:kb 14s ease-in-out infinite alternate,scz-fade 32s ease-in-out 22.4s infinite">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,65,82,.5) 0%,rgba(46,65,82,.22) 45%,rgba(46,65,82,.5) 100%)"></div>
+    </div>
+    <div style="position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:30px;padding:74px 20px 110px">
+      <!-- envelope + postcard (in alto) -->
+      <div style="position:relative;width:300px;height:200px;display:flex;align-items:flex-end;justify-content:center;margin-top:4px">
+        <div style="position:absolute;bottom:0;width:290px;height:120px;background:#E6DAC0;border:1.5px solid #C6BA9B;border-radius:6px;box-shadow:0 8px 16px rgba(0,0,0,.22);z-index:2;perspective:600px;animation:scz-rise .6s cubic-bezier(.2,.7,.2,1) both">
+          <div style="position:absolute;bottom:14px;left:26px;display:flex;flex-direction:column;gap:9px"><div style="width:120px;height:5px;background:#C6BA9B;opacity:.4;border-radius:2px"></div><div style="width:160px;height:5px;background:#C6BA9B;opacity:.35;border-radius:2px"></div><div style="width:95px;height:5px;background:#C6BA9B;opacity:.3;border-radius:2px"></div></div>
+          <div style="position:absolute;bottom:8px;right:8px;width:52px;height:52px;border-radius:50%;border:1.5px solid #17324E;background:rgba(23,50,78,.06);display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-14deg);gap:1px">
+            <div style="font-size:7px;letter-spacing:.8px;font-weight:800;color:#17324E">SCOZIA</div><div style="width:28px;height:1px;background:#17324E;opacity:.5"></div><div style="font-size:10px;letter-spacing:1px;font-weight:800;color:#17324E">2026</div><div style="width:28px;height:1px;background:#17324E;opacity:.5"></div><div style="font-size:6px;font-style:italic;color:#2B4C6B">ON THE ROAD</div>
+          </div>
+          <div style="position:absolute;top:0;left:0;width:100%;height:58px;clip-path:polygon(0 0,100% 0,50% 100%);background:linear-gradient(180deg,#DCCDA9,#D2C199);transform-origin:50% 0;animation:scz-flap .8s ease-in-out .8s both"></div>
+        </div>
+        <div style="position:relative;bottom:52px;z-index:3;background:#FDF7E7;border:3px dashed #17324E;border-radius:6px;padding:14px 30px;text-align:center;box-shadow:0 10px 18px rgba(0,0,0,.3);animation:scz-cardout 1s ease-out 1.5s both,floaty 5s ease-in-out 2.5s infinite">
+          <div style="font-family:'Playfair Display',Georgia,serif;font-size:40px;line-height:44px;letter-spacing:6px;font-weight:800;color:#17324E;animation:scz-write 1.3s steps(14,end) 2.7s both">SCOZIA</div>
+          <div style="font-size:31px;line-height:31px;font-family:'Caveat',cursive;font-weight:700;color:#17324E;margin-top:0;animation:scz-write 1s steps(12,end) 4.1s both">on the road</div>
+          <div style="position:relative;height:32px;margin-top:6px;animation:scz-reveal .5s ease-out 5.2s both">
+            <div style="position:absolute;left:10%;right:10%;bottom:7px;border-top:2.5px dashed #17324E;opacity:.6"></div>
+            <span style="position:absolute;bottom:1px;left:8%;animation:scz-forward 2.6s ease-in-out 5.5s both"><span style="display:inline-block;font-size:22px;animation:carbounce 1s ease-in-out infinite">🚗</span></span>
+          </div>
+        </div>
+      </div>
+      <sc-if value="{{ hasNext }}" hint-placeholder-val="{{ true }}">
+      <div sc-camel-on-click="{{ next.onTap }}" style="cursor:pointer;width:100%;max-width:322px;margin-top:auto;border-radius:20px;overflow:hidden;background:#FDF7E7;box-shadow:0 8px 22px rgba(12,26,38,.34);animation:scz-rise .7s cubic-bezier(.2,.7,.2,1) .2s both">
+        <div style="display:flex;align-items:center;justify-content:center;gap:10px;padding:9px 16px;background:#17324E">
+          <span style="font-size:10px;letter-spacing:2.5px;font-weight:800;color:#E9D5A4;font-family:'Nunito Sans',system-ui,sans-serif">MANCANO</span>
+          <span style="font-family:'Playfair Display',Georgia,serif;font-size:27px;line-height:25px;font-weight:700;color:#FDF7E7">{{ cdDays }}</span>
+          <span style="font-size:10px;letter-spacing:2.5px;font-weight:800;color:#E9D5A4;font-family:'Nunito Sans',system-ui,sans-serif">GIORNI</span>
+          <span style="width:1px;height:17px;background:#E9D5A4;opacity:.45"></span>
+          <span style="display:flex;gap:2px;font-family:Menlo,monospace;font-size:13px;font-weight:700;color:#FDF7E7"><span>{{ cdH }}</span><span style="color:#E9D5A4">:</span><span>{{ cdM }}</span><span style="color:#E9D5A4">:</span><span>{{ cdS }}</span></span>
+        </div>
+        <div style="padding:11px 12px 12px">
+          <div style="font-size:9.5px;letter-spacing:2px;font-weight:800;color:#7C6A4A;font-family:'Nunito Sans',system-ui,sans-serif;margin:0 0 8px 2px">PROSSIMA FERMATA</div>
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="flex:none;width:66px;height:66px;border-radius:14px;background-image:{{ next.thumb }};background-size:cover;background-position:center"></div>
+            <div style="flex:1;min-width:0;font-family:'Nunito Sans',system-ui,sans-serif">
+              <div style="font-family:'Playfair Display',Georgia,serif;font-size:19px;line-height:22px;font-weight:700;color:#17324E">{{ next.name }}</div>
+              <div style="font-size:12.5px;color:#52697A;margin-top:2px">{{ next.zona }}</div>
+            </div>
+            <div style="flex:none;align-self:flex-end;font-size:11.5px;font-weight:800;color:#7C6A4A;background:#E9DFC6;padding:5px 11px;border-radius:999px;font-family:'Nunito Sans',system-ui,sans-serif">{{ next.badge }}</div>
+          </div>
+        </div>
+      </div>
+      </sc-if>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ ITINERARIO ============ -->
+  <sc-if value="{{ isItin }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Itinerario" style="position:absolute;inset:0;background:#F1E7CF;overflow:hidden">
+    <div style="position:absolute;top:0;left:0;right:0;height:315px;z-index:1">
+      <div ref="{{ mainMapRef }}" style="position:absolute;inset:0"></div>
+      <div style="position:absolute;top:12px;left:0;right:0;display:flex;justify-content:center;pointer-events:none;z-index:1000">
+        <div style="display:flex;align-items:center;gap:6px;background:#F1E7CF;border:1.5px solid #C6BA9B;border-radius:999px;padding:7px 14px;box-shadow:0 3px 6px rgba(0,0,0,.18)"><span style="color:#A8442B;font-size:10px">▲</span><span style="font-size:11px;letter-spacing:2px;font-weight:800;color:#17324E;font-family:'Nunito Sans',system-ui,sans-serif">SCOZIA · 3–11 OTTOBRE</span></div>
+      </div>
+    </div>
+    <div style="position:absolute;left:0;right:0;bottom:0;top:{{ sheetTop }};background:#F1E7CF;border-radius:24px 24px 0 0;border:1px solid #D6CBB2;border-bottom:none;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 -8px 20px rgba(0,0,0,.15);z-index:2;transition:top .34s cubic-bezier(.4,0,.2,1)">
+      
+      <div sc-camel-on-click="{{ toggleSheet }}" style="cursor:pointer;text-align:center;padding:10px 24px 8px;flex:none">
+        <div style="width:40px;height:4px;border-radius:2px;background:#C4553A;margin:0 auto 8px"></div>
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:30px;font-weight:700;color:#17324E;line-height:34px">Itinerario</div>
+        <div style="display:inline-flex;align-items:center;gap:6px;margin-top:4px;padding:4px 12px;border-radius:999px;background:#E8DEC4;font-size:11px;letter-spacing:1px;font-weight:600;color:#4C6577;font-family:'Nunito Sans',system-ui,sans-serif">{{ sheetHint }}</div>
+      </div>
+      <div style="flex:1;overflow-y:auto;padding:6px 16px 96px">
+        <sc-for list="{{ days }}" as="d" hint-placeholder-count="4">
+          <div style="border-radius:16px;border:{{ d.border }};background:#FDF7E7;margin-bottom:12px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.08)">
+            <div sc-camel-on-click="{{ d.onToggle }}" style="cursor:pointer;position:relative;height:118px;overflow:hidden">
+              <div style="position:absolute;inset:0;background-image:{{ d.bg }};background-size:cover;background-position:center"></div>
+              <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(46,65,82,.8) 0%,rgba(46,65,82,.44) 55%,rgba(46,65,82,.1) 100%)"></div>
+              <div style="position:absolute;top:10px;right:10px;display:flex;align-items:center;gap:4px;background:rgba(245,237,221,.94);border-radius:999px;padding:3px 9px"><svg sc-camel-view-box="0 0 24 24" width="13" height="13" fill="none" stroke="#C4553A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ d.icon }}"></path></svg><span style="font-size:9px;letter-spacing:1px;font-weight:800;color:#A8442B;font-family:'Nunito Sans',system-ui,sans-serif">{{ d.dateShort }}</span></div>
+              <div style="position:absolute;left:14px;right:14px;bottom:11px">
+                <div style="font-size:10px;letter-spacing:2px;font-weight:800;color:#E9D5A4;font-family:'Nunito Sans',system-ui,sans-serif;text-shadow:0 1px 3px rgba(0,0,0,.6)">{{ d.kicker }}</div>
+                <div style="font-family:'Playfair Display',Georgia,serif;font-size:21px;font-weight:700;color:#F1E7CF;line-height:24px;text-shadow:0 1px 4px rgba(0,0,0,.6)">{{ d.title }}</div>
+                <div style="font-size:17px;line-height:19px;font-family:'Caveat',cursive;font-weight:600;color:#F1E7CF;text-shadow:0 1px 3px rgba(0,0,0,.7)">{{ d.subtitle }}</div>
+              </div>
+              <div style="position:absolute;bottom:10px;right:12px;color:#F1E7CF;font-size:13px;text-shadow:0 1px 3px rgba(0,0,0,.7)">{{ d.chev }}</div>
+            </div>
+            <div style="display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:10px 14px 12px;font-family:'Nunito Sans',system-ui,sans-serif">
+              <sc-for list="{{ d.meta }}" as="m" hint-placeholder-count="2">
+                <div style="display:flex;align-items:center;gap:4px;font-size:10.5px;font-weight:700;color:{{ m.fg }};background:{{ m.bg }};border:1px solid {{ m.bd }};padding:3px 8px;border-radius:999px">{{ m.t }}</div>
+              </sc-for>
+              <div style="margin-left:auto;display:flex;align-items:center;gap:4px;font-size:10.5px;font-weight:800;letter-spacing:.5px;color:#A8442B">Apri il giorno<span style="font-size:15px">›</span></div>
+            </div>
+          </div>
+        </sc-for>
+        <div style="text-align:center;font-size:16px;font-family:'Caveat',cursive;font-weight:600;color:#52697A;padding:8px 0 4px">— Alba gu bràth · Scozia per sempre —</div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ GIORNO (schermata a sé) ============ -->
+  <sc-if value="{{ hasDayView }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Giorno" style="position:absolute;inset:0;z-index:1150;background:#F1E7CF;display:flex;flex-direction:column">
+    <div style="position:relative;height:210px;flex:none;overflow:hidden">
+      <div style="position:absolute;inset:0;background-image:{{ dv.bg }};background-size:cover;background-position:center"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,65,82,.34) 0%,rgba(46,65,82,.06) 26%,rgba(245,237,221,.5) 58%,rgba(245,237,221,.93) 82%,#F1E7CF 100%)"></div>
+      <div sc-camel-on-click="{{ closeDay }}" style="position:absolute;top:64px;left:16px;width:38px;height:38px;border-radius:50%;background:#F1E7CF;border:1.5px solid #C6BA9B;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 3px 8px rgba(0,0,0,.3);font-size:18px;color:#C4553A;font-weight:700">←</div>
+      <div style="position:absolute;top:64px;right:16px;display:flex;align-items:center;gap:4px;background:rgba(245,237,221,.94);border-radius:999px;padding:5px 11px"><svg sc-camel-view-box="0 0 24 24" width="14" height="14" fill="none" stroke="#C4553A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ dv.icon }}"></path></svg><span style="font-size:10px;letter-spacing:1px;font-weight:800;color:#A8442B;font-family:'Nunito Sans',system-ui,sans-serif">{{ dv.dateShort }}</span></div>
+      <div style="position:absolute;left:20px;right:20px;bottom:8px">
+        <div style="font-size:10px;letter-spacing:2px;font-weight:800;color:#A8442B;font-family:'Nunito Sans',system-ui,sans-serif;text-shadow:0 1px 0 rgba(245,237,221,.75)">{{ dv.kicker }}</div>
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:28px;line-height:31px;font-weight:700;color:#17324E;text-shadow:0 1px 0 rgba(245,237,221,.85)">{{ dv.title }}</div>
+        <div style="font-size:18px;line-height:20px;font-family:'Caveat',cursive;font-weight:600;color:#3A6577">{{ dv.subtitle }}</div>
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:14px 20px 110px">
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;font-family:'Nunito Sans',system-ui,sans-serif">
+        <sc-for list="{{ dv.meta }}" as="m" hint-placeholder-count="2">
+          <div style="display:flex;align-items:center;gap:4px;font-size:11px;font-weight:700;color:{{ m.fg }};background:{{ m.bg }};border:1px solid {{ m.bd }};padding:4px 10px;border-radius:999px">{{ m.t }}</div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ dv.hasRoutes }}" hint-placeholder-val="{{ false }}">
+        <div style="margin:-2px 0 16px">
+          <div style="font-size:9.5px;letter-spacing:2px;font-weight:800;color:#4C5F2E;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:7px">SCEGLI L’ITINERARIO</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <div sc-camel-on-click="{{ dv.routeA.onTap }}" style="cursor:pointer;background:{{ dv.routeA.bg }};color:{{ dv.routeA.fg }};border:1.5px solid {{ dv.routeA.bd }};border-radius:13px;padding:10px 8px;text-align:center;font-family:'Nunito Sans',system-ui,sans-serif">
+              <div style="font-size:13px;font-weight:800">{{ dv.routeA.label }}</div><div style="font-size:10px;opacity:.8;margin-top:2px">{{ dv.routeA.sub }}</div>
+            </div>
+            <div sc-camel-on-click="{{ dv.routeB.onTap }}" style="cursor:pointer;background:{{ dv.routeB.bg }};color:{{ dv.routeB.fg }};border:1.5px solid {{ dv.routeB.bd }};border-radius:13px;padding:10px 8px;text-align:center;font-family:'Nunito Sans',system-ui,sans-serif">
+              <div style="font-size:13px;font-weight:800">{{ dv.routeB.label }}</div><div style="font-size:10px;opacity:.8;margin-top:2px">{{ dv.routeB.sub }}</div>
+            </div>
+          </div>
+        </div>
+      </sc-if>
+      <div style="font-size:9.5px;letter-spacing:2px;font-weight:800;color:#4C5F2E;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:6px">DOVE ANDIAMO</div>
+      <div style="font-size:14px;line-height:21px;color:#4E6577;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:14px;text-wrap:pretty">{{ dv.go }}</div>
+      <div style="position:relative;height:200px;border-radius:14px;overflow:hidden;border:1.5px solid #C6BA9B;box-shadow:0 3px 8px rgba(0,0,0,.12)">
+        <div ref="{{ dayMapRef }}" style="position:absolute;inset:0"></div>
+      </div>
+      <div style="display:flex;gap:14px;margin-top:7px;margin-bottom:14px;font-family:'Nunito Sans',system-ui,sans-serif">
+        <div style="display:flex;align-items:center;gap:5px;font-size:10.5px;color:#566E7C"><span style="width:10px;height:10px;border-radius:50%;background:#FDF7E7;border:2px solid #C4553A;display:inline-block"></span>attrazione</div>
+        <div style="display:flex;align-items:center;gap:5px;font-size:10.5px;color:#566E7C"><span style="width:10px;height:10px;border-radius:50%;background:#F3E3BE;border:2px solid #C9963A;display:inline-block"></span>✦ chicca</div>
+        <div style="display:flex;align-items:center;gap:5px;font-size:10.5px;color:#566E7C"><span style="width:16px;height:3px;border-radius:2px;background:#C4553A;display:inline-block"></span>percorso</div>
+      </div>
+      <div style="font-size:9.5px;letter-spacing:2px;font-weight:800;color:#4C5F2E;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:4px">COSA VEDIAMO</div>
+      <sc-for list="{{ dv.attractions }}" as="r" hint-placeholder-count="3">
+        <div sc-camel-on-click="{{ r.onOpen }}" style="cursor:pointer;display:flex;gap:12px;padding:9px 0;align-items:center;border-bottom:1px solid #DDD2B7">
+          <div style="flex:none;width:26px;height:26px;border-radius:50%;background:{{ r.dot }};border:2px solid {{ r.ring }};display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:{{ r.ring }};font-family:'Nunito Sans',system-ui,sans-serif">{{ r.num }}</div>
+          <div style="flex:1;min-width:0">
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap"><span style="font-size:15px;font-weight:700;color:#17324E">{{ r.name }}</span><sc-if value="{{ r.chicca }}" hint-placeholder-val="{{ false }}"><span style="font-size:8.5px;letter-spacing:1px;font-weight:800;color:#8A5A18;background:#F3E3BE;border:1px solid #C9963A;padding:2px 6px;border-radius:999px;font-family:'Nunito Sans',system-ui,sans-serif">✦ CHICCA</span></sc-if></div>
+            <div style="font-size:12px;line-height:16px;color:#566E7C;font-family:'Nunito Sans',system-ui,sans-serif">{{ r.note }}</div>
+          </div>
+          <div style="flex:none;color:#C4553A;font-size:18px">›</div>
+        </div>
+      </sc-for>
+      <sc-if value="{{ dv.showNote }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:14px;background:#E8DEC4;border-radius:12px;overflow:hidden">
+          
+          <div style="padding:11px 13px">
+            <div style="font-size:9.5px;letter-spacing:2px;font-weight:800;color:#4C5F2E;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:5px">DA SAPERE</div>
+            <sc-for list="{{ dv.notes }}" as="n" hint-placeholder-count="1"><div style="font-size:12px;line-height:18px;color:#4E6577;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:3px">• {{ n }}</div></sc-for>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ AUDIOGUIDA · ELENCO ============ -->
+  <sc-if value="{{ isAudioList }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Audioguide" style="position:absolute;inset:0;display:flex;flex-direction:column;background:#F1E7CF">
+    <div style="text-align:center;padding:52px 24px 8px;flex:none">
+      <div style="font-size:10px;letter-spacing:3px;font-weight:800;color:#A8442B;font-family:'Nunito Sans',system-ui,sans-serif">▲ AUDIOGUIDA ▲</div>
+      <div style="font-family:'Playfair Display',Georgia,serif;font-size:30px;font-weight:700;color:#17324E;line-height:34px">Ogni tappa, una storia</div>
+      <div style="font-size:17px;font-family:'Caveat',cursive;font-weight:600;color:#52697A;margin-top:1px">Tocca un luogo per ascoltarlo</div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:10px 16px 96px">
+      <sc-for list="{{ audioDays }}" as="d" hint-placeholder-count="4">
+        <div style="margin-bottom:18px">
+          <div style="font-size:9.5px;letter-spacing:2px;font-weight:800;color:#7C6A4A;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:7px">{{ d.label }}</div>
+          <sc-for list="{{ d.stops }}" as="s" hint-placeholder-count="3">
+            <div sc-camel-on-click="{{ s.onTap }}" style="cursor:pointer;display:flex;gap:12px;align-items:center;background:#FDF7E7;border:1px solid #D6CBB2;border-radius:16px;padding:9px;margin-bottom:9px;box-shadow:0 3px 8px rgba(0,0,0,.07)">
+              <div style="flex:none;width:62px;height:62px;border-radius:13px;background-image:{{ s.thumb }};background-size:cover;background-position:center"></div>
+              <div style="flex:1;min-width:0;font-family:'Nunito Sans',system-ui,sans-serif">
+                <div style="font-size:15px;font-weight:800;color:#17324E;line-height:19px">{{ s.name }}</div>
+                <div style="font-size:11.5px;color:#52697A;margin-top:2px">{{ s.zona }}</div>
+                <div style="font-size:11px;font-weight:700;color:#A8442B;margin-top:3px">▶ {{ s.dur }} di ascolto</div>
+              </div>
+              <div style="flex:none;color:#C4553A;font-size:18px">›</div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+      <div style="text-align:center;font-size:16px;font-family:'Caveat',cursive;font-weight:600;color:#52697A;padding:2px 0 8px">— ▲ —</div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ AUDIOGUIDA ============ -->
+  <sc-if value="{{ isAudio }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Audioguida" style="position:absolute;inset:0;display:flex;flex-direction:column;background:#F1E7CF">
+    <div style="position:relative;height:38%;flex:none;overflow:hidden">
+      <div style="position:absolute;inset:0;background-image:{{ ag.bg }};background-size:cover;background-position:center"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,50,78,.34) 0%,rgba(23,50,78,.05) 45%,rgba(23,50,78,.18) 100%)"></div>
+      <div sc-camel-on-click="{{ backToList }}" style="position:absolute;top:58px;left:16px;width:38px;height:38px;border-radius:50%;background:#FDF7E7;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 3px 8px rgba(0,0,0,.3);font-size:18px;color:#17324E;font-weight:700">←</div>
+    </div>
+    <div style="flex:1;margin-top:-26px;position:relative;z-index:2;background:#F6EEDC;border-radius:26px 26px 0 0;overflow-y:auto;padding:20px 20px 200px;box-shadow:0 -6px 18px rgba(0,0,0,.14)">
+      <div style="font-family:'Playfair Display',Georgia,serif;font-size:29px;line-height:33px;font-weight:700;color:#17324E">{{ ag.name }}</div>
+      <div style="display:flex;align-items:center;gap:6px;margin-top:5px;font-family:'Nunito Sans',system-ui,sans-serif;font-size:13px;color:#52697A"><span style="color:#A8442B;font-size:14px">◉</span>{{ ag.zona }}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-top:15px;font-family:'Nunito Sans',system-ui,sans-serif">
+        <div style="background:#E9DFC6;border-radius:14px;padding:10px 8px;text-align:center">
+          <div style="font-size:9px;letter-spacing:1px;font-weight:800;color:#7C6A4A">DIFFICOLTÀ</div>
+          <div style="font-size:14px;font-weight:800;color:#17324E;margin-top:2px">{{ ag.diff }}</div>
+        </div>
+        <div style="background:#E9DFC6;border-radius:14px;padding:10px 8px;text-align:center">
+          <div style="font-size:9px;letter-spacing:1px;font-weight:800;color:#7C6A4A">DURATA</div>
+          <div style="font-size:14px;font-weight:800;color:#17324E;margin-top:2px">{{ ag.durTxt }}</div>
+        </div>
+        <div style="background:#E9DFC6;border-radius:14px;padding:10px 8px;text-align:center">
+          <div style="font-size:9px;letter-spacing:1px;font-weight:800;color:#7C6A4A">PERCORSO</div>
+          <div style="font-size:14px;font-weight:800;color:#17324E;margin-top:2px">{{ ag.dist }}</div>
+        </div>
+      </div>
+      <div style="font-size:15px;font-weight:800;color:#A8442B;font-family:'Nunito Sans',system-ui,sans-serif;margin:20px 0 8px">Panoramica</div>
+      <sc-for list="{{ ag.paras }}" as="p" hint-placeholder-count="2">
+        <div style="font-size:14.5px;line-height:25px;color:#3F5563;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:13px;text-wrap:pretty">{{ p }}</div>
+      </sc-for>
+      <div style="background:#E9DFC6;border-radius:16px;padding:13px 15px;margin-top:6px;font-family:'Nunito Sans',system-ui,sans-serif">
+        <div style="font-size:13.5px;font-weight:800;color:#17324E;margin-bottom:4px">Consiglio utile</div>
+        <div style="font-size:13px;line-height:19px;color:#4E6577">{{ ag.tip }}</div>
+      </div>
+      <div style="text-align:center;font-size:16px;font-family:'Caveat',cursive;font-weight:600;color:#52697A;padding-top:14px">— ▲ —</div>
+    </div>
+    <!-- player -->
+    <div style="position:absolute;left:14px;right:14px;bottom:100px;z-index:50">
+      <div style="background:#FDF7E7;border:1.5px solid #D6CBB2;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,.22);overflow:hidden">
+        
+        <div style="display:flex;align-items:center;gap:12px;padding:10px 14px">
+          <div sc-camel-on-click="{{ togglePlay }}" style="cursor:pointer;flex:none;width:44px;height:44px;border-radius:50%;background:#C4553A;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px rgba(0,0,0,.25);color:#F1E7CF;font-size:15px;font-family:'Nunito Sans',system-ui,sans-serif">{{ playIcon }}</div>
+          <div style="flex:1;min-width:0">
+            <div style="font-size:13.5px;font-weight:700;color:#17324E;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ gTitle }}</div>
+            <div style="height:5px;border-radius:3px;background:#DDD2B7;margin-top:6px;overflow:hidden"><div style="height:100%;border-radius:3px;background:#C4553A;width:{{ playProg }}"></div></div>
+            <div style="display:flex;justify-content:space-between;margin-top:3px;font-family:Menlo,monospace;font-size:9.5px;color:#566E7C"><span>{{ playElapsed }}</span><span>{{ gDur }}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ CURIOSITÀ ============ -->
+  <sc-if value="{{ isCurio }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Curiosità" style="position:absolute;inset:0;display:flex;flex-direction:column;background:#F1E7CF">
+    
+    <div style="text-align:center;padding:14px 24px 6px;flex:none">
+      <div style="font-size:10px;letter-spacing:3px;font-weight:800;color:#A8442B;font-family:'Nunito Sans',system-ui,sans-serif">▲ LO SAPEVI CHE… ▲</div>
+      <div style="font-family:'Playfair Display',Georgia,serif;font-size:30px;font-weight:700;color:#17324E;line-height:34px">Curiosità</div>
+      <div style="font-size:17px;font-family:'Caveat',cursive;font-weight:600;color:#52697A;margin-top:1px">Piccole storie scozzesi da tirar fuori al momento giusto</div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:8px 16px 96px">
+      <sc-for list="{{ curios }}" as="c" hint-placeholder-count="6">
+        <div style="position:relative;background:#FDF7E7;border:1px solid #D6CBB2;border-radius:16px;margin-bottom:13px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.08)">
+          <div style="position:absolute;left:0;top:0;bottom:0;width:5px;background:{{ c.accent }}"></div>
+          <div style="padding:13px 15px 14px 19px">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:7px">
+              <div style="flex:none;width:34px;height:34px;border-radius:10px;background:{{ c.iconBg }};display:flex;align-items:center;justify-content:center"><svg sc-camel-view-box="0 0 24 24" width="19" height="19" fill="none" stroke="{{ c.accent }}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="{{ c.icon }}"></path></svg></div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:8.5px;letter-spacing:2px;font-weight:800;color:{{ c.tagFg }};font-family:'Nunito Sans',system-ui,sans-serif">{{ c.tag }}</div>
+                <div style="font-size:16.5px;font-weight:700;color:#17324E;line-height:19px">{{ c.title }}</div>
+              </div>
+            </div>
+            <div style="font-size:13px;line-height:20px;color:#4E6577;font-family:'Nunito Sans',system-ui,sans-serif;text-wrap:pretty">{{ c.body }}</div>
+          </div>
+        </div>
+      </sc-for>
+      <div style="text-align:center;font-size:16px;font-family:'Caveat',cursive;font-weight:600;color:#52697A;padding:6px 0">— ▲ —</div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ DETTAGLIO ATTRAZIONE ============ -->
+  <sc-if value="{{ hasDetail }}" hint-placeholder-val="{{ false }}">
+  <div data-screen-label="Dettaglio attrazione" style="position:absolute;inset:0;z-index:1200;background:#F1E7CF;display:flex;flex-direction:column">
+    <div style="position:relative;height:44%;flex:none;overflow:hidden">
+      <div style="position:absolute;inset:0;background-image:{{ det.bgImg }};background-size:cover;background-position:center"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(46,65,82,.3) 0%,rgba(134,184,218,0) 32%,rgba(245,237,221,.42) 62%,rgba(245,237,221,.9) 86%,#F1E7CF 100%)"></div>
+      <div sc-camel-on-click="{{ closeDetail }}" style="position:absolute;top:64px;left:16px;width:38px;height:38px;border-radius:50%;background:#F1E7CF;border:1.5px solid #C6BA9B;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 3px 8px rgba(0,0,0,.3);font-size:18px;color:#C4553A;font-weight:700">←</div>
+      <div style="position:absolute;left:20px;right:20px;bottom:10px">
+        <div style="display:flex;align-items:center;gap:8px;font-family:'Nunito Sans',system-ui,sans-serif;margin-bottom:4px">
+          <span style="font-size:10px;letter-spacing:2px;font-weight:800;color:#A8442B;background:#F1E7CF;border:1px solid #D6CBB2;padding:3px 9px;border-radius:999px">{{ det.dayLabel }}</span>
+          <sc-if value="{{ det.chicca }}" hint-placeholder-val="{{ false }}"><span style="font-size:9px;letter-spacing:1px;font-weight:800;color:#8A5A18;background:#F3E3BE;border:1px solid #C9963A;padding:3px 8px;border-radius:999px">✦ CHICCA</span></sc-if>
+        </div>
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:32px;line-height:36px;font-weight:700;color:#17324E;text-shadow:0 1px 0 rgba(245,237,221,.85)">{{ det.name }}</div>
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:14px 20px 110px">
+      <div style="font-size:18px;font-family:'Caveat',cursive;font-weight:600;color:#3A6577;margin-bottom:10px">{{ det.dayTitle }}</div>
+      <div style="font-size:14.5px;line-height:23px;color:#4E6577;font-family:'Nunito Sans',system-ui,sans-serif;text-wrap:pretty">{{ det.desc }}</div>
+      <div sc-camel-on-click="{{ det.onCta }}" style="cursor:pointer;margin-top:18px;display:flex;align-items:center;gap:12px;background:#FDF7E7;border:1.5px solid #D6CBB2;border-radius:14px;padding:12px 14px;box-shadow:0 4px 10px rgba(0,0,0,.1)">
+        <div style="flex:none;width:40px;height:40px;border-radius:12px;background:rgba(184,69,44,.11);display:flex;align-items:center;justify-content:center"><svg sc-camel-view-box="0 0 24 24" width="22" height="22" fill="none" stroke="#C4553A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ det.ctaIcon }}"></path></svg></div>
+        <div style="flex:1">
+          <div style="font-size:9.5px;letter-spacing:2px;font-weight:800;color:#A8442B;font-family:'Nunito Sans',system-ui,sans-serif">{{ det.ctaKicker }}</div>
+          <div style="font-size:15px;font-weight:700;color:#17324E">{{ det.ctaTitle }}</div>
+        </div>
+        <div style="flex:none;color:#C4553A;font-size:18px">→</div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ============ TAB BAR ============ -->
+  <div style="position:absolute;left:0;right:0;bottom:0;z-index:1300">
+    
+    <div style="display:flex;justify-content:space-around;align-items:center;background:#F1E7CF;border-top:1px solid #D6CBB2;padding:8px 8px 22px">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="4">
+        <div sc-camel-on-click="{{ t.onTap }}" style="cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;width:72px">
+          <div style="width:36px;height:30px;border-radius:10px;background:{{ t.iconBg }};display:flex;align-items:center;justify-content:center"><svg sc-camel-view-box="0 0 24 24" width="20" height="20" fill="none" stroke="{{ t.color }}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ t.icon }}"></path></svg></div>
+          <div style="font-size:10px;font-weight:700;letter-spacing:.5px;color:{{ t.color }};font-family:'Nunito Sans',system-ui,sans-serif">{{ t.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</x-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:470,&quot;height&quot;:940},&quot;mostraNote&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Itinerario&quot;},&quot;tabIniziale&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;itinerario&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Prototipo&quot;}}">
+class Component extends DCLogic {
+  state = { tab: this.props.tabIniziale ?? "home", openDay: "d2", dayView: null, detail: null, guide: null, playing: false, prog: 0, sheetUp: false, routeChoice: "A", now: Date.now() };
+  mainMapRef = React.createRef();
+  dayMapRef = React.createRef();
+
+  componentDidMount() {
+    this._t = setInterval(() => this.setState({ now: Date.now() }), 1000);
+    this._ensureMaps();
+  }
+  componentDidUpdate() { this._ensureMaps(); }
+  componentWillUnmount() { clearInterval(this._t); this._stopSpeech(); }
+
+  GUIDES = [
+    { id:"g_glasgow", chip:"Glasgow", title:"Glasgow, la città reinventata", img:"glasgow", paras:[
+      "Glasgow non è mai stata una città che aspetta. Nell'Ottocento era il secondo porto dell'Impero britannico: qui si costruiva un quinto delle navi del mondo, e i cantieri del fiume Clyde davano lavoro a centomila persone. Quando i cantieri chiusero, negli anni Settanta, la città sembrava finita. E invece si è reinventata — con l'arte, la musica e una buona dose di umorismo nero.",
+      "George Square è il punto da cui leggere tutto: le City Chambers, inaugurate dalla regina Vittoria nel 1888, erano un modo per dire al mondo che Glasgow non era seconda a nessuno. Il marmo degli interni supera quello del Vaticano — i glaswegiani lo ripetono volentieri. Al centro della piazza, sulla colonna più alta, non c'è un re: c'è Walter Scott, uno scrittore. Molto scozzese, come scelta.",
+      "Il West End è l'altra anima della città. L'università, con le sue guglie neogotiche, ha ispirato più di un set cinematografico, e sotto le sue volte — i cloisters — sembra di camminare in un romanzo. A due passi, Ashton Lane: un vicolo acciottolato coperto di lucine dove i pub si susseguono porta a porta. È qui che si capisce il vero talento di Glasgow: trasformare una serata qualunque in una festa.",
+      "Un consiglio: i glaswegiani sono considerati i più chiacchieroni di Scozia. Se qualcuno al pub vi chiede da dove venite, non è cortesia di circostanza — preparatevi a una conversazione vera. 'People Make Glasgow', dice il motto ufficiale della città. Ed è tutto fuorché uno slogan."
+    ]},
+    { id:"g_glencoe", chip:"Glencoe", title:"Glencoe, la valle del pianto", img:"glencoe", paras:[
+      "Ci sono luoghi in cui il paesaggio racconta una storia anche a chi non la conosce. Glencoe è uno di questi: pareti di roccia scura alte mille metri, nuvole che si impigliano sulle creste, e una luce che cambia ogni dieci minuti. I gaelici la chiamavano la valle del pianto — e non solo per la pioggia.",
+      "Il 13 febbraio 1692, all'alba, centoventi soldati del governo massacrarono qui i loro ospiti. Da dodici giorni vivevano nelle case del clan MacDonald, mangiando al loro tavolo e dormendo sotto i loro tetti — poi arrivò l'ordine: uccidere tutti gli uomini sotto i settant'anni. Morirono in trentotto, e altri quaranta tra donne e bambini fuggiti sulla neve. In Scozia il tradimento dell'ospitalità è il crimine più imperdonabile: per questo, più della strage, si ricorda il modo.",
+      "Le Three Sisters — le tre sorelle — sono i tre contrafforti che precipitano nella valle dal massiccio del Bidean nam Bian. Il punto panoramico sulla A82 è uno dei più fotografati di Scozia, ma il consiglio è alzare gli occhi oltre le creste: lassù si nasconde la Lost Valley, la valle perduta, dove i MacDonald nascondevano il bestiame rubato. E dove alcuni di loro trovarono rifugio quella notte di febbraio.",
+      "Se piove, non maleditelo: Glencoe dà il meglio con il cielo drammatico. Il sole pieno, qui, è quasi fuori luogo."
+    ]},
+    { id:"g_castelli", chip:"Castelli", title:"Castelli: pietre, clan e fantasmi", img:"eilean", paras:[
+      "La Scozia ha più di tremila castelli — in media uno ogni venticinque chilometri quadrati. Non è un vezzo architettonico: per secoli questa è stata una terra di clan in guerra tra loro, di invasioni vichinghe e inglesi, di alleanze siglate e tradite. Ogni castello è un capitolo di quella storia.",
+      "Eilean Donan, quello che incontrerete sulla strada per Skye, è il più fotografato di tutti: un isolotto dove si incontrano tre lochs, un ponte di pietra, una sagoma perfetta. Ma la cartolina inganna — il castello originale fu fatto saltare in aria dalle navi inglesi nel 1719, dopo che una guarnigione spagnola vi si era asserragliata per la causa giacobita. Per due secoli rimase un rudere. Poi un colonnello, John MacRae-Gilstrap, lo ricomprò e passò vent'anni a ricostruirlo pietra su pietra, seguendo — si dice — un sogno del suo capomastro.",
+      "Dunvegan, su Skye, è un'altra storia: il clan MacLeod ci abita ininterrottamente da ottocento anni, un record assoluto in Scozia. Dentro custodiscono la Fairy Flag, la bandiera delle fate: un drappo di seta consumata che, secondo la leggenda, ha il potere di salvare il clan in battaglia — ma solo tre volte. È stata sventolata due. La terza se la tengono stretta.",
+      "E poi ci sono le rovine, come Duntulm sulla punta nord di Skye, in bilico sulla scogliera: quattro fantasmi accertati secondo la tradizione locale, tra cui una balia che fece cadere il bambino del capoclan dalla finestra. I castelli scozzesi non si visitano soltanto: si ascoltano."
+    ]},
+    { id:"g_skye", chip:"Skye", title:"Skye, l'isola delle leggende", img:"skye", paras:[
+      "Skye in gaelico è An t-Eilean Sgitheanach, l'isola alata — per la forma delle sue penisole che si aprono come ali. Ma il nome che le è rimasto addosso è un altro: l'isola delle nebbie. Qui la geologia ha fatto cose talmente strane che gli abitanti, per spiegarle, hanno dovuto inventare le fate.",
+      "L'Old Man of Storr, il vecchio, è un pinnacolo di basalto di quarantotto metri rimasto in piedi dopo un'antica frana colossale. La leggenda racconta di un gigante sepolto con il pollice fuori dalla terra. Il Quiraing, poco più a nord, è una frana che si muove ancora oggi: la strada che lo attraversa va riparata ogni anno. Dentro il suo labirinto di torri si nasconde la Table, un prato perfettamente piatto e invisibile dal basso, dove gli isolani nascondevano il bestiame durante le razzie.",
+      "E poi c'è la storia vera, che qui si intreccia sempre con la leggenda: dopo la disfatta di Culloden, il principe Charlie in fuga attraversò proprio queste acque travestito da cameriera irlandese, remando con Flora MacDonald da South Uist fino a Skye. La canzone che lo racconta — lo Skye Boat Song — la conoscete anche voi, anche se non lo sapete.",
+      "Un'ultima cosa: a Skye le pecore sono più del doppio degli abitanti, e sulle strade a corsia unica hanno sempre la precedenza. Non è una legge scritta. È semplicemente così."
+    ]},
+    { id:"g_giacobiti", chip:"Giacobiti", title:"Culloden e il sogno giacobita", img:"games", paras:[
+      "Per capire le Highlands bisogna conoscere una data: 16 aprile 1746. Quel giorno, su una brughiera ventosa a venti minuti da Inverness, finì in meno di un'ora un sogno durato sessant'anni — riportare gli Stuart sul trono di Gran Bretagna.",
+      "I giacobiti — da Jacobus, Giacomo in latino, il re spodestato nel 1688 — erano in gran parte highlander dei clan fedeli agli Stuart. Il loro ultimo condottiero fu Charles Edward Stuart, il Bonnie Prince: giovane, carismatico, cresciuto a Roma. Nel 1745 sbarcò in Scozia quasi senza uomini né denaro, e in pochi mesi arrivò a centocinquanta chilometri da Londra. Poi la ritirata, l'inverno, e Culloden: mille e cinquecento highlander caduti contro cinquanta soldati governativi. Le cariche dei clan, esauste e affamate, si spensero nel fango contro i cannoni.",
+      "Ciò che venne dopo fu peggio della battaglia: il kilt e il tartan vietati per legge, le cornamuse considerate strumenti di guerra, il sistema dei clan smantellato. Le Highlands che attraverserete — così vuote, così silenziose — sono anche il risultato di quella repressione e delle Clearances che seguirono.",
+      "Sul campo di Culloden, oggi, pietre semplici segnano le fosse comuni dei clan, ciascuna con il proprio nome. I mazzi di fiori freschi che ci trovate sopra non li porta un ente del turismo. Li portano i discendenti."
+    ]},
+    { id:"g_greatglen", chip:"Great Glen", title:"Il Great Glen e Loch Ness", img:"lochness", paras:[
+      "Guardate la Scozia su una mappa: c'è una linea dritta che la taglia in due da Fort William a Inverness, come un colpo di spada. È il Great Glen, una faglia geologica di quattrocento milioni di anni, e i suoi laghi — Lochy, Oich e Ness — riempiono la ferita. La strada che percorrerete verso Inverness corre tutta lì dentro.",
+      "Loch Ness è il protagonista, e non solo per il mostro: contiene più acqua di tutti i laghi di Inghilterra e Galles messi insieme, è profondo fino a duecentotrenta metri, e la torba disciolta rende l'acqua così scura che a un metro di profondità non si vede più nulla. Il posto perfetto per una leggenda.",
+      "E la leggenda è più antica di quanto si pensi: il primo avvistamento risale al 565, quando San Colombano avrebbe ordinato a una 'bestia acquatica' di lasciare in pace un uomo nel fiume Ness. Il mostro moderno nasce invece nel 1933, con una strada nuova, una foto famosa — e falsa — e un'ondata di turisti che non si è mai fermata. Nel 2019 un'analisi del DNA del lago non ha trovato rettili, ma una quantità sospetta di DNA di anguilla. Un'anguilla gigante? Nessuno lo sa. Ed è bello così.",
+      "A Inverness, il castello rosa che domina il fiume è l'ultimo di una serie: quelli prima sono stati distrutti tutti, l'ultimo dai giacobiti nel 1746. La capitale delle Highlands è una città piccola, da girare a piedi — e la sera, nei pub lungo il fiume, la musica folk parte da sola."
+    ]},
+    { id:"g_edimburgo", chip:"Edimburgo", title:"Edimburgo, la città verticale", img:"edinburgh", paras:[
+      "Edimburgo è una città costruita in verticale, su un vulcano spento e sulla propria storia. La Old Town medievale è cresciuta su se stessa per secoli: quando finiva lo spazio, si costruiva sopra. I palazzi arrivarono a quattordici piani — i grattacieli del Seicento — e interi vicoli vennero sepolti e inglobati nelle fondamenta di edifici nuovi. Alcuni si visitano ancora oggi, congelati com'erano.",
+      "Il castello, sulla sua roccia nera, resiste da novecento anni ed è stato assediato ventisei volte — più di ogni altra fortezza in Gran Bretagna. Dentro custodisce i gioielli della corona scozzese e la Stone of Destiny, la pietra su cui venivano incoronati i re di Scozia, rubata dagli inglesi nel 1296 e tornata a casa solo nel 1996, settecento anni dopo.",
+      "Il Royal Mile scende dal castello a Holyrood ed è esattamente un miglio scozzese — che, ovviamente, è più lungo di quello inglese. Ai suoi lati si aprono i closes, decine di vicoli stretti come fessure, ognuno con un nome e una storia. E a proposito di storie: in un cimitero qui vicino riposano un certo Tom Riddell e un certo William McGonagall. J.K. Rowling scriveva nei caffè a due passi, e i nomi sulle lapidi le sono rimasti in tasca.",
+      "Chiudete dal vulcano: Arthur's Seat, un'ora di salita dal palazzo di Holyrood, oppure Calton Hill al tramonto, con i suoi monumenti neoclassici. Da lassù capirete perché la chiamavano l'Atene del Nord — e perché nessuno, andandosene, la dimentica."
+    ]},
+  ];
+
+  GUIDE_FOR = {
+    "George Square":"g_glasgow","Kelvingrove (esterno)":"g_glasgow",
+    "Glencoe — Three Sisters":"g_glencoe",
+    "Eilean Donan Castle":"g_castelli",
+    "Old Man of Storr":"g_skye","Quiraing":"g_skye","Neist Point Lighthouse":"g_skye","Porto di Portree":"g_skye",
+    "Five Sisters of Kintail":"g_greatglen","Inverness Castle Experience":"g_greatglen",
+    "Edinburgh Waverley":"g_edimburgo","Edinburgh Castle":"g_edimburgo","Royal Mile":"g_edimburgo","Arthur's Seat":"g_edimburgo",
+  };
+
+  CURIOS = [
+    { tag:"LINGUA", title:"Slàinte mhath!", accent:"#C4553A", icon:"M8 22h8M12 15v7M5 3h14l-1 7a6 6 0 0 1-12 0z",
+      body:"È il brindisi scozzese: si pronuncia «slàn-ge-va» e significa «buona salute». Rispondere «slàinte mhòr» (salute grande). Impararlo prima del primo pub è mezzo viaggio fatto." },
+    { tag:"NATURA", title:"L'unicorno nazionale", accent:"#4C5F2E", icon:"M12 2l2 6 6-1-4 5 4 5-6-1-2 6-2-6-6 1 4-5-4-5 6 1z",
+      body:"L'animale nazionale di Scozia è l'unicorno: creatura fiera e indomabile, scelta apposta come contraltare del leone inglese. Lo trovi nello stemma reale, sempre incatenato — perché un unicorno libero era considerato troppo pericoloso." },
+    { tag:"ABBIGLIAMENTO", title:"Sotto il kilt?", accent:"#17324E", icon:"M8 3h8l-1 6 2 12H7l2-12z M12 9v12",
+      body:"La tradizione militare vuole che sotto il kilt non si porti nulla — «true Scotsman». Oggi è più leggenda che regola, ma non chiederlo mai a un highlander se non vuoi una risposta troppo dettagliata." },
+    { tag:"METEO", title:"Quattro stagioni in un'ora", accent:"#6E96A8", icon:"M12 2v3M12 19v3M5 12H2M22 12h-3M6 6l-2-2M20 20l-2-2M6 18l-2 2M20 4l-2 2M12 8a4 4 0 1 0 .01 0",
+      body:"Il detto locale è «se non ti piace il tempo, aspetta cinque minuti». A ottobre porta strati e una giacca impermeabile: pioggia, sole e vento possono alternarsi nello stesso viewpoint. E i midge, i moscerini, a ottobre fortunatamente sono già spariti." },
+    { tag:"GUIDA", title:"Le single track road", accent:"#C9963A", icon:"M4 22L9 2M20 22L15 2M12 6v2M12 12v2M12 18v2",
+      body:"Su Skye molte strade sono a una sola corsia con piazzole di scambio, i «passing places». La regola: chi ha la piazzola più vicina si ferma e fa passare. Un cenno di mano per ringraziare è d'obbligo — e le pecore hanno sempre la precedenza." },
+    { tag:"CIBO", title:"Haggis e Irn-Bru", accent:"#C4553A", icon:"M4 12a8 4 0 0 0 16 0M4 12a8 4 0 0 1 16 0M4 12v3a8 4 0 0 0 16 0v-3",
+      body:"Il piatto nazionale è l'haggis: interiora di pecora con avena e spezie, più buono di come suona. Da innaffiare con l'Irn-Bru, la bibita arancione fluo che qui vende più della Coca-Cola: una delle poche nazioni al mondo dove succede." },
+    { tag:"NASCOSTO", title:"La cornamusa fantasma", accent:"#4C5F2E", icon:"M12 3v10M12 3l5 2M12 3L7 5M9 13a3 3 0 1 0 6 0M6 21h12",
+      body:"Dopo la battaglia di Culloden (1746) la cornamusa fu bandita come «strumento di guerra»: suonarla poteva costare la vita. Oggi è il simbolo sonoro della Scozia — spesso la sentirai partire da sola all'angolo di una via del Royal Mile." },
+    { tag:"MISTERO", title:"Nessie, dal 565 d.C.", accent:"#6E96A8", icon:"M3 16c2-2 4-2 6 0s4 2 6 0M15 15c0-5 5-6 5-1M19 11a.8.8 0 1 0 .01 0",
+      body:"Il primo avvistamento del mostro di Loch Ness è attribuito a San Colombano nel 565 d.C. Il lago è così profondo e scuro di torba che nasconde più acqua di tutti i laghi di Inghilterra e Galles messi insieme. Nel 2019 il DNA dell'acqua non ha trovato rettili… ma tantissime anguille." },
+  ];
+
+  _stopSpeech() {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    this._utter = null; this._queue = null; this._qi = 0;
+    if (this.state.playing || this.state.prog) this.setState({ playing: false, prog: 0 });
+  }
+
+  _pickVoice() {
+    const ss = window.speechSynthesis;
+    const it = ss.getVoices().filter(v => v.lang && v.lang.toLowerCase().startsWith("it"));
+    if (!it.length) return null;
+    // prefer higher-quality / natural voices, avoid the old robotic ones
+    const pref = [/google/i, /siri/i, /premium/i, /enhanced/i, /neural/i, /natural/i, /alice/i, /federica|luca|paola/i];
+    for (const rx of pref) { const v = it.find(x => rx.test(x.name)); if (v) return v; }
+    const local = it.find(v => v.localService); return local || it[0];
+  }
+
+  // speak paragraph by paragraph for smoother, less choppy delivery
+  _speakChunks(chunks, startIdx) {
+    const ss = window.speechSynthesis;
+    const voice = this._pickVoice();
+    const total = chunks.reduce((s, c) => s + c.length, 0);
+    const done = chunks.slice(0, startIdx).reduce((s, c) => s + c.length, 0);
+    this._queue = chunks; this._qi = startIdx;
+    const speakOne = i => {
+      if (i >= chunks.length) { this._utter = null; this.setState({ playing: false, prog: 0 }); return; }
+      const u = new SpeechSynthesisUtterance(chunks[i]);
+      u.lang = "it-IT"; u.rate = 0.94; u.pitch = 1.06; u.volume = 1;
+      if (voice) u.voice = voice;
+      const base = done + chunks.slice(startIdx, i).reduce((s, c) => s + c.length, 0);
+      u.onboundary = e => { if (e.charIndex != null) this.setState({ prog: Math.min(1, (base + e.charIndex) / total) }); };
+      u.onend = () => { if (this._utter === u) { this._qi = i + 1; speakOne(i + 1); } };
+      this._utter = u;
+      ss.speak(u);
+    };
+    speakOne(startIdx);
+  }
+
+  _togglePlay = () => {
+    const ss = window.speechSynthesis;
+    if (!ss) { alert("La lettura vocale non è supportata su questo browser."); return; }
+    if (this.state.playing) { ss.pause(); this.setState({ playing: false }); return; }
+    if (this._utter && ss.paused) { ss.resume(); this.setState({ playing: true }); return; }
+    const g = this.audioFor(this.state.guide);
+    if (!g) return;
+    ss.cancel();
+    const chunks = (g.paras.join(" ").match(/[^.!?…]+[.!?…]+["»']?\s*|.+$/g) || [g.paras.join(" ")]).map(s => s.trim()).filter(Boolean);
+    // must speak synchronously inside the tap gesture (iOS requirement)
+    this.setState({ playing: true, prog: 0 });
+    this._speakChunks(chunks, 0);
+  };
+
+  audioFor(name) {
+    if (!this._audio) this._audio = Object.assign({}, this.AUDIO_A, this.AUDIO_B, this.AUDIO_C);
+    return name ? this._audio[name] : null;
+  }
+
+  AUDIO_C = {
+    "Highland Main Line": { zona:"Inverness → Edimburgo", diff:"Facile", dur:"3 h 30", dist:"in treno", tip:"Sedetevi a sinistra nel senso di marcia: la vista è migliore.", paras:[
+      "La linea che collega Inverness a Perth e poi a Edimburgo fu completata nel 1863 ed è una delle imprese ferroviarie più ostinate dell'epoca vittoriana: per arrivare a Inverness senza fare il giro lungo dalla costa, i costruttori decisero di attraversare i Cairngorms. Il passo di Druimuachdar, a quattrocentocinquanta metri, è il punto più alto della rete ferroviaria britannica.",
+      "In tre ore e mezza il finestrino cambia paese quattro volte: la piana del Moray, poi le brughiere alte dei Cairngorms con le montagne che a ottobre hanno già la prima neve, poi i boschi del Perthshire con le betulle gialle e i larici arancioni, infine le colline coltivate delle Lowlands. Il tratto tra Blair Atholl e Pitlochry è il più bello, con il fiume Garry che corre di fianco ai binari. È anche una linea con una storia sociale precisa: prima del treno, arrivare a Inverness dal sud significava giorni di carrozza su strade militari. Il treno trasformò le Highlands in una destinazione — e non a caso il turismo scozzese, con la caccia, la pesca e i castelli affittati agli inglesi ricchi, nasce esattamente in quegli anni. Regina Vittoria compresa."
+    ]},
+    "Pitlochry": { zona:"Perthshire", diff:"Facile", dur:"1 h 30", dist:"sosta", tip:"Sosta facoltativa: si scende e si riprende un treno dopo.", paras:[
+      "Pitlochry deve tutto a due cose: la regina Vittoria e la ferrovia. Quando la regina cominciò a passare le estati a Balmoral, il Perthshire divenne di moda, e questo villaggio si riempì di alberghi vittoriani in pietra grigia con le verande di ferro. Ci veniva chi cercava aria buona: il medico della regina raccomandava il clima di Pitlochry per i polmoni, e la cosa fece la fortuna del paese per un secolo.",
+      "La curiosità che vale la sosta è la scala dei salmoni: quando negli anni Cinquanta costruirono la diga idroelettrica sul fiume Tummel, si accorsero che avrebbero bloccato la migrazione dei salmoni verso i luoghi di riproduzione. Costruirono allora una scala di trentaquattro vasche successive, che i pesci risalgono saltando da una all'altra, e una finestra subacquea per guardarli passare. Passano circa cinquemila salmoni all'anno. In autunno è lo spettacolo migliore del paese. Poco lontano c'è anche il Pass of Killiecrankie, una gola boscosa dove nel 1689 i giacobiti vinsero la loro prima battaglia: un soldato in fuga, dice la leggenda, saltò cinque metri e mezzo da una riva all'altra del fiume per salvarsi. Il punto si chiama ancora Soldier's Leap, e guardandolo si fa fatica a crederci."
+    ]},
+    "Edinburgh Waverley": { zona:"Edimburgo · centro", diff:"Facile", dur:"20 min", dist:"in stazione", tip:"Uscita Princes Street per la Città Nuova, Market Street per la Città Vecchia.", paras:[
+      "È l'unica stazione ferroviaria al mondo a portare il nome di un romanzo: Waverley, il libro di Walter Scott del 1814, quello che inventò il romanzo storico moderno e la Scozia romantica che tutti immaginano. La stazione sta in una valle che fino al Settecento era un lago artificiale puzzolente, il Nor Loch, dove la città scaricava di tutto e dove annegavano le donne accusate di stregoneria.",
+      "Quando prosciugarono il lago per costruire la Città Nuova, la valle rimase come cicatrice verde tra la città medievale in alto e quella georgiana in basso. Ci passarono i binari, e da allora Edimburgo è divisa in due livelli collegati da ponti: quando uscite da Waverley e salite verso la Old Town state letteralmente risalendo di un secolo ogni rampa. Alzate lo sguardo appena fuori: il monumento gotico nero alto sessantuno metri, sopra Princes Street, è dedicato a Scott — il monumento più grande al mondo dedicato a uno scrittore. Ci sono duecentottantasette gradini per salire in cima, la scala è strettissima, e chi ci arriva riceve un certificato. Vale la pena solo se non soffrite di claustrofobia: gli ultimi rampanti passano dentro la pietra."
+    ]},
+    "Edinburgh Castle": { zona:"Edimburgo · Castle Rock", diff:"Facile", dur:"2 h 30", dist:"visita", tip:"Biglietto online obbligatorio: si esaurisce nei fine settimana.", paras:[
+      "La roccia su cui sta il castello è un tappo di magma solidificato dentro il camino di un vulcano estinto trecentoquaranta milioni di anni fa. Il ghiacciaio, scorrendo da ovest, non riuscì a scalfirla e scavò invece tutto intorno, lasciando una coda di detriti in discesa verso est: quella coda è il Royal Mile. La città ha la forma che ha per colpa di un ghiacciaio.",
+      "Qui c'è insediamento umano dall'età del bronzo, e fortificazioni da almeno millecinquecento anni. Il castello ha subito ventisei assedi: è il luogo più assediato d'Europa. Dentro ci sono tre cose da non perdere. La St Margaret's Chapel, minuscola, del 1130, l'edificio più antico di Edimburgo ancora in piedi. I Gioielli della Corona scozzese, i più antichi delle isole britanniche, che furono nascosti sottoterra durante l'invasione di Cromwell e poi dimenticati in una cassa murata per più di cent'anni, finché Walter Scott — di nuovo lui — ottenne il permesso di cercarli e li ritrovò. E la Stone of Destiny, la pietra su cui venivano incoronati i re di Scozia, portata via dagli inglesi nel 1296 e restituita solo nel 1996. Alle tredici in punto sparano un cannone. Ogni giorno tranne la domenica, dal 1861."
+    ]},
+    "Royal Mile": { zona:"Edimburgo · Old Town", diff:"Facile", dur:"2 h", dist:"1,8 km", tip:"Infilatevi nei close laterali: è lì che la città è vera.", paras:[
+      "Un miglio scozzese — che è più lungo di quello inglese, milleottocentonovanta metri — in discesa dal castello al palazzo di Holyrood. Ai lati, un pettine di vicoli strettissimi chiamati close e wynd, ciascuno con il nome di chi ci abitava. Nel Settecento questa era la città più densamente popolata d'Europa: non potendo espandersi oltre le mura, Edimburgo crebbe in altezza, con palazzi di undici e dodici piani quando a Londra tre erano tanti. Li chiamavano lands, e dentro ci vivevano insieme tutte le classi sociali: i poveri in cantina e in soffitta, i ricchi ai piani intermedi, con la stessa scala per tutti.",
+      "Sotto i vostri piedi c'è un'altra città. Quando costruirono i ponti che collegano le colline, murarono interi vicoli che restarono sepolti: Mary King's Close è visitabile e racconta l'epidemia di peste del 1645. La leggenda dice che il vicolo fu murato con i malati dentro; la verità è meno cinematografica ma abbastanza dura lo stesso. Cercate il Heart of Midlothian sul selciato, davanti alla cattedrale di St Giles: un cuore di mosaico che segna dove sorgeva la vecchia prigione. Gli edimburghesi ci sputano sopra passando. Un tempo era disprezzo per la legge; oggi è scaramanzia."
+    ]},
+    "Arthur's Seat": { zona:"Edimburgo · Holyrood Park", diff:"Media", dur:"2 h", dist:"4 km a/r", tip:"Vento fortissimo in cima: allacciate tutto quello che potete perdere.", paras:[
+      "Duecentocinquantuno metri, un vulcano estinto in mezzo alla città, raggiungibile a piedi dal centro in meno di un'ora. Non ha niente a che vedere con re Artù, con ogni probabilità: il nome deriva forse dal gaelico Àrd-na-Said, l'altura delle frecce, storpiato dagli inglesi in qualcosa che suonava familiare.",
+      "Questa collina ha cambiato la scienza. Alla fine del Settecento James Hutton, medico e agricoltore edimburghese, venne a studiare le rocce di Salisbury Crags e capì una cosa che nessuno aveva capito prima: che il magma si era infilato tra strati di roccia già esistenti, e che quindi la Terra doveva essere immensamente più antica dei seimila anni della cronologia biblica. Hutton fondò così la geologia moderna, e la frase con cui chiuse il suo studio è rimasta celebre: nessuna traccia di un inizio, nessuna prospettiva di una fine. In cima trovate una vista a trecentosessanta gradi su tutta Edimburgo, il Firth of Forth, e nelle giornate limpide le colline del Fife. La salita più facile parte da Dunsapie Loch; quella dal parcheggio di Holyrood è più ripida ma più breve. Il vento in cima è quasi sempre notevole."
+    ]},
+    "Calton Hill": { zona:"Edimburgo · Calton Hill", diff:"Facile", dur:"1 h", dist:"1 km", tip:"È il posto giusto per il tramonto: arrivate mezz'ora prima.", paras:[
+      "Una collinetta di centotrè metri a dieci minuti da Princes Street, con sopra un insieme di monumenti neoclassici che sembrano capitati per sbaglio in Scozia. È il motivo per cui Edimburgo si guadagnò il soprannome di Atene del Nord: nell'Ottocento, in piena fioritura intellettuale — l'Illuminismo scozzese di Hume, Adam Smith, Walter Scott — la città decise di vestirsi da capitale classica.",
+      "Il monumento più grande, quello con le colonne doriche, doveva essere una copia del Partenone dedicata ai caduti delle guerre napoleoniche. Iniziarono nel 1826, finirono i soldi dopo tre anni e dodici colonne, e non lo completarono mai. Gli edimburghesi lo chiamano la vergogna di Edimburgo, ma con affetto: incompiuto è diventato più bello e più fotografato di quanto sarebbe stato finito. Accanto c'è il Nelson Monument, a forma di cannocchiale rovesciato, con in cima una palla del tempo che ogni giorno alle tredici scende lungo l'asta: serviva alle navi nel porto di Leith per regolare i cronometri, sincronizzata con il cannone del castello. Da qui il panorama al tramonto è il migliore della città: il castello controluce, il Firth of Forth che luccica, e le guglie della Old Town che diventano nere."
+    ]},
+    "Dean Village": { zona:"Edimburgo · Water of Leith", diff:"Facile", dur:"1 h", dist:"1,5 km", tip:"Si raggiunge a piedi dalla Città Nuova in quindici minuti.", paras:[
+      "A cinque minuti dalle vetrine di Princes Street c'è una valle con un torrente, mulini in pietra e case con i tetti a spiovente che sembra un villaggio a sé. Lo è stato per ottocento anni: qui, sul Water of Leith, c'erano undici mulini da grano che macinavano la farina per tutta Edimburgo. Sui muri si vedono ancora le pietre scolpite con pale da fornaio e covoni di grano, insegne della corporazione dei mugnai.",
+      "L'industria morì con i mulini a vapore, il quartiere si degradò e nel Novecento fu recuperato come zona residenziale. Il grande ponte che lo scavalca, altissimo, è ancora una volta di Thomas Telford: quando lo costruirono, nel 1832, tagliò fuori il villaggio dalla strada principale, ed è paradossalmente il motivo per cui è rimasto intatto. La passeggiata lungo il Water of Leith continua per chilometri in entrambe le direzioni: verso monte porta al Modern Art Gallery e a St Bernard's Well, un tempietto circolare costruito sopra una sorgente minerale che i vittoriani ritenevano curativa — l'acqua sapeva di uova marce, e la bevevano lo stesso convinti che facesse bene."
+    ]},
+  };
+
+  AUDIO_B = {
+    "Old Man of Storr": { zona:"Trotternish · Skye", diff:"Media", dur:"2–3 h", dist:"3,8 km", tip:"Partite presto: il parcheggio si riempie entro le nove.", paras:[
+      "Il pinnacolo che vedete è alto quarantotto metri e sta in piedi per puro equilibrio. Fa parte del Trotternish Ridge, la frana attiva più grande d'Europa: trenta chilometri di scarpata che si muove ancora oggi, qualche millimetro all'anno. La geologia è semplice e spettacolare insieme — colate di lava basaltica pesantissime appoggiate sopra sedimenti giurassici molli, che sotto quel peso cedono e scivolano verso il mare. Quando il pendio collassa, restano in piedi le colonne di basalto più dure. L'Old Man è una di quelle.",
+      "La leggenda racconta di un gigante sepolto nella collina, di cui affiorerebbe solo il pollice. Un'altra versione parla di un vecchio e di sua moglie, sorpresi dalle fate e trasformati in pietra: la moglie sarebbe il pinnacolo più tozzo lì accanto. Il nome gaelico della zona, Bodach an Stòir, significa proprio il vecchio dello Storr. Salite con calma: il sentiero è largo e ben tenuto nella prima parte, poi si fa ripido e sassoso. Voltatevi ogni tanto — la vista su Loch Leathan e sul Sound of Raasay migliora a ogni curva, e nelle giornate limpide si arriva a vedere le montagne della terraferma. Se trovate nebbia non disperate: l'Old Man che compare e scompare tra le nuvole è, se possibile, ancora più bello."
+    ]},
+    "Kilt Rock & Mealt Falls": { zona:"Trotternish · Skye", diff:"Facile", dur:"20 min", dist:"belvedere", tip:"Sentite un fischio? È il vento nella ringhiera, non una cornamusa.", paras:[
+      "La scogliera davanti a voi è alta novanta metri e deve il nome alla sua trama: le colonne verticali di basalto sembrano le pieghe di un kilt, e gli strati orizzontali di sedimento sottostanti fanno da tartan. Le colonne si formano quando la lava si raffredda lentamente e si contrae, spaccandosi in prismi regolari — lo stesso fenomeno del Selciato del Gigante in Irlanda.",
+      "L'acqua che precipita accanto è la Mealt Falls: esce dal Loch Mealt, che sta a pochi metri dal bordo, e cade dritta in mare per settanta metri. Con vento forte da nord la cascata risale: l'acqua non arriva mai in basso, si polverizza e torna su. C'è un dettaglio che sorprende quasi tutti: la ringhiera del belvedere, con i tubi cavi e i fori, in certe giornate produce un fischio lamentoso che sembra una cornamusa lontana. Non è un'installazione artistica, è un effetto acustico involontario che i visitatori giurano di aver sentito da chilometri. Guardate anche verso il mare: l'isola piatta all'orizzonte è Raasay, dove nacque Sorley MacLean, il più grande poeta gaelico del Novecento. Scriveva d'amore e di Highland Clearances con la stessa intensità."
+    ]},
+    "Quiraing": { zona:"Trotternish · Skye", diff:"Media", dur:"2 h", dist:"6,8 km ad anello", tip:"Strada a binario unico e ripida: usate le piazzole con generosità.", paras:[
+      "Il Quiraing è la parte ancora viva della grande frana del Trotternish: si muove di circa quattro centimetri all'anno, e ogni anno la strada che avete percorso deve essere riparata. Il risultato è un paesaggio che non assomiglia a nient'altro in Europa — guglie, torrioni, altipiani nascosti, avvallamenti erbosi che sembrano scavati apposta.",
+      "I tre punti che tutti cercano hanno nomi antichi. The Needle, l'ago, è un obelisco di roccia alto quaranta metri. The Prison, la prigione, è un blocco che visto dal sentiero sembra davvero una fortezza in rovina. E The Table è un altopiano erboso perfettamente piatto, nascosto tra le rocce, dove per secoli gli isolani portavano il bestiame per sottrarlo ai razziatori vichinghi e poi ai clan rivali: da sotto non si vede, e le mucche sparivano come per magia. Il nome stesso viene dal norreno Kvi Rand, il recinto di pietra — un promemoria che qui i vichinghi non passarono soltanto, ci vissero per quattro secoli. Metà dei toponimi di Skye è ancora norrena. Il sentiero ad anello è spettacolare ma esposto: se il tempo cambia, tornate indietro senza rimpianti, il panorama migliore si vede già dai primi venti minuti."
+    ]},
+    "Fairy Glen": { zona:"Uig · Skye", diff:"Facile", dur:"1 h", dist:"1,5 km", tip:"Non costruite cerchi di pietre: i volontari li smontano ogni settimana.", paras:[
+      "Una valletta di collinette coniche, laghetti minuscoli e terrazzamenti erbosi che sembrano scavati da qualcuno molto più piccolo di noi. Non ci sono fate: sono ancora una volta frane antiche, blocchi di roccia scivolati e poi arrotondati dal ghiaccio e dall'erba. Ma la scala è così ridotta e così regolare che il cervello si rifiuta di crederci — sembra un paesaggio in miniatura costruito apposta.",
+      "In cima alla collinetta principale c'è una formazione rocciosa che tutti chiamano Castle Ewen: sembra la torre di un castello in rovina, ed è invece un affioramento naturale. Nei prati sottostanti troverete cerchi di sassi disposti a spirale: non sono antichi, li fanno i visitatori da una ventina d'anni, e il National Trust chiede gentilmente di non aggiungerne — spostare le pietre danneggia il terreno e l'erba. La tradizione locale sulle fate, in Scozia, è meno zuccherosa di quanto si pensi: le sìthichean del folklore gaelico erano creature da rispettare e temere, che rubavano bambini e latte, e che si placavano lasciando offerte fuori dalla porta. Non erano piccole né gentili. Erano il modo con cui si spiegava tutto ciò che andava storto senza colpa."
+    ]},
+    "Sligachan Old Bridge": { zona:"Sligachan · Skye", diff:"Facile", dur:"30 min", dist:"in loco", tip:"L'acqua è gelida davvero: sette secondi passano lentissimi.", paras:[
+      "Il ponte in pietra a tre arcate risale al 1810 ed è opera della scuola di Thomas Telford. Dietro, quando le nuvole lo permettono, si alzano i Black Cuillin: creste di gabbro nero, taglienti, le montagne più difficili della Gran Bretagna, tanto che per completare tutte le loro cime serve saper arrampicare. Il gabbro è così magnetico da far impazzire le bussole — non è un modo di dire, gli alpinisti lo mettono in conto.",
+      "La leggenda del ponte è una delle più raccontate di Skye. Scáthach, la leggendaria guerriera che aveva la sua scuola di combattimento sull'isola, sfidò l'eroe irlandese Cù Chulainn in un duello che durò giorni. Alla fine la figlia di lei li fermò. La madre di Scáthach, o in altre versioni la fata del fiume, benedisse quelle acque: chi immerge il viso nel fiume Sligachan per sette secondi ottiene la bellezza eterna. Il rituale funziona così — viso sott'acqua, sette secondi, e si lascia asciugare all'aria senza strofinare. Che ci crediate o no, vale la pena farlo: l'acqua che scende dai Cuillin è tra le più pure della Scozia, e la faccia dopo brucia dal freddo in un modo che vi sveglia per il resto della giornata."
+    ]},
+    "Talisker Distillery": { zona:"Carbost · Skye", diff:"Facile", dur:"1 h 30", dist:"visita", tip:"Prenotare: i tour si esauriscono con giorni di anticipo.", paras:[
+      "Fondata nel 1830 dai fratelli MacAskill sulla riva del Loch Harport, Talisker è la distilleria più antica di Skye e per centosessant'anni è stata l'unica. Il suo whisky è famoso per una cosa: il sale. Il carattere pepato, salmastro, affumicato, viene dalla torba dell'isola e dal fatto che le botti maturano a pochi metri dal mare, con la salsedine che entra nel legno.",
+      "Gli alambicchi hanno una forma anomala, con un tubo a U che li fa somigliare a un lambicco storto: è il risultato di una riparazione d'emergenza dopo un incendio nel 1960. Quando ricostruirono, copiarono gli alambicchi vecchi esattamente com'erano, ammaccature comprese, per non cambiare il sapore. È una fedeltà quasi maniacale, ma è la regola nel whisky: nulla si cambia se il risultato piace. Robert Louis Stevenson lo citò in una poesia come re dei liquori insieme all'Islay e al Glenlivet. Se assaggiate, provate a bere prima un sorso liscio e poi con qualche goccia d'acqua: l'acqua rompe la tensione superficiale e libera gli aromi, ed è per questo che nelle distillerie vi daranno sempre una piccola caraffa. Non è un'eresia, è tecnica."
+    ]},
+    "Claigan Coral Beach": { zona:"Dunvegan · Skye", diff:"Facile", dur:"1 h 30", dist:"2,4 km a/r", tip:"Sentiero fangoso: stivaletti meglio delle scarpe da città.", paras:[
+      "La spiaggia bianca che vi aspetta dopo venti minuti di sentiero non è fatta di sabbia e non è fatta di corallo. È maërl: alghe rosse calcificate che crescono sui fondali freddi in colonie che possono avere migliaia di anni, e che una volta morte si sbiancano al sole e si accumulano sulla riva. L'effetto, con l'acqua turchese sopra il fondo chiaro, è tropicale in modo quasi ridicolo per una latitudine più a nord di Mosca.",
+      "Il maërl è un habitat protetto e fragilissimo: cresce di meno di un millimetro all'anno e ospita una quantità enorme di specie marine. Per questo è vietato portarne via anche solo una manciata — sembra innocuo, ma migliaia di visitatori che riempiono una tasca fanno danni reali. Dalla spiaggia, se il tempo è limpido, si vedono le Outer Hebrides all'orizzonte e le Macleod's Tables, due colline dalla cima perfettamente piatta. La leggenda dice che un capo MacLeod, deriso a corte perché a Skye non c'erano sale da banchetto degne, invitò i nobili sull'isola e li portò a cena in cima a una di quelle colline: il tavolo era la montagna, il lampadario le stelle, i candelieri i suoi uomini con le torce in mano."
+    ]},
+    "Neist Point Lighthouse": { zona:"Glendale · Skye", diff:"Media", dur:"1 h 30", dist:"2,8 km a/r", tip:"La discesa iniziale è ripida e in cemento: attenzione al ritorno.", paras:[
+      "Siete sul punto più occidentale di Skye. Il faro fu costruito nel 1909 dalla ditta di famiglia degli Stevenson — sì, gli stessi di Robert Louis Stevenson, che era l'unico dei suoi a non voler fare l'ingegnere dei fari e si mise a scrivere romanzi. La famiglia costruì la quasi totalità dei fari scozzesi, in posti dove sembrava impossibile persino sbarcare.",
+      "Per portare qui i materiali costruirono una teleferica lungo la scogliera: i resti si vedono ancora scendendo. Il faro fu automatizzato nel 1990 e oggi non ci abita più nessuno. Le scogliere attorno sono uno dei posti migliori dell'isola per avvistare balene minke, delfini e, con fortuna, orche: la corrente qui è fortissima e porta pesce. Al tramonto la luce colpisce la parete di Waterstein Head da destra e la fa diventare arancione: è il motivo per cui tutti restano fino all'ultimo. Portate una giacca antivento anche se il cielo è sereno — su questa punta il vento non smette mai, e il ritorno in salita al buio con il freddo è la parte meno poetica della giornata. Una torcia nel telefono basta, ma tenetela carica."
+    ]},
+    "Five Sisters of Kintail": { zona:"Glen Shiel", diff:"Facile", dur:"20 min", dist:"belvedere", tip:"Il belvedere è sulla A87 a Ratagan: piazzola sulla sinistra.", paras:[
+      "Cinque cime in fila che superano i novecento metri, allineate come sorelle in posa. Il belvedere sulla A87 le inquadra tutte insieme, con il Loch Duich davanti che le riflette quando l'acqua è ferma. Fanno parte del Kintail, una delle zone più selvagge delle Highlands occidentali, oggi protetta dal National Trust for Scotland.",
+      "La leggenda dice che un contadino locale aveva sette figlie. Due marinai irlandesi, fratelli, chiesero in sposa le due più giovani; il padre acconsentì a patto che tornassero con i loro cinque fratelli per le altre cinque. Le due partirono, gli altri non arrivarono mai. Le cinque sorelle rimaste attesero sulla riva finché una strega, mossa a pietà o a dispetto, le trasformò in montagne perché potessero aspettare per sempre. In fondo alla valle, nel 1719, si combatté la battaglia di Glen Shiel: giacobiti e soldati spagnoli contro l'esercito britannico. Fu l'ultima volta che truppe straniere combatterono sul suolo britannico, e una delle cime lì accanto si chiama ancora Sgurr nan Spainteach, il picco degli spagnoli. Persero, e i sopravvissuti si arresero dopo giorni passati tra queste montagne senza cibo."
+    ]},
+    "Invermoriston Falls": { zona:"Loch Ness · Invermoriston", diff:"Facile", dur:"40 min", dist:"800 m", tip:"Le rocce bagnate sono scivolosissime: restate sui sentieri.", paras:[
+      "Il fiume Moriston precipita qui in una gola stretta tra rocce nere, e sopra ci sono due ponti: uno nuovo, uno vecchio e in rovina. Quello vecchio è di Thomas Telford, costruito nel 1813 come parte del grande piano di strade militari e civili che collegò finalmente le Highlands al resto del paese. Ci mise otto anni a finirlo — le piene continuavano a portarsi via i lavori.",
+      "Accanto alla cascata c'è una piccola torretta di pietra a pianta ottagonale, la Summer House: la fecero costruire i Grant di Glenmoriston nell'Ottocento come belvedere per gli ospiti. Da lì la vista sulla gola è la migliore. Il villaggio attorno è minuscolo ma ha una storia grossa: dopo Culloden, il principe Charles Edward Stuart si nascose per settimane in queste colline, protetto dai Sette Uomini di Glenmoriston, un gruppo di fuorilegge che avrebbe potuto consegnarlo per trentamila sterline di taglia — una fortuna assoluta all'epoca — e non lo fece mai. Nessuno di loro parlò, nemmeno anni dopo. In Scozia la fedeltà al clan valeva più del denaro, e questa è una delle poche storie in cui la cosa è documentata invece che romanzata."
+    ]},
+    "Inverness Castle Experience": { zona:"Inverness", diff:"Facile", dur:"1 h 30", dist:"visita", tip:"Prenotare online: gli ingressi sono a fasce orarie.", paras:[
+      "L'edificio in arenaria rosa che domina il fiume Ness è del 1836, ma è almeno il quinto castello a sorgere su questa collina. Il primo risale all'undicesimo secolo. Uno di quelli precedenti fu fatto saltare in aria dai giacobiti nel 1746, poche settimane prima di Culloden, per impedire che gli inglesi lo usassero: il soldato francese incaricato dell'esplosione sbagliò i calcoli e saltò in aria con il castello. Il suo cane, dice la cronaca, sopravvisse e fu ritrovato dall'altra parte del fiume.",
+      "Per quasi due secoli l'edificio ottocentesco è stato il tribunale della contea, chiuso al pubblico. Ha riaperto come attrazione visitabile dopo un lungo restauro, con una terrazza panoramica in cima alla torre nord che regala la vista migliore sulla città e sul fiume. Davanti all'ingresso c'è la statua di Flora MacDonald, la donna che aiutò il principe Charlie a fuggire travestendolo da cameriera irlandese di nome Betty Burke. Guarda verso ovest, verso le isole, con una mano sugli occhi: sta cercando il principe che non tornò mai. Fu arrestata e imprigionata nella Torre di Londra, poi liberata; emigrò in America, tornò in Scozia e morì a Skye, avvolta — dice la tradizione — in un lenzuolo in cui aveva dormito il principe."
+    ]},
+    "Ness Islands": { zona:"Inverness", diff:"Facile", dur:"1 h", dist:"2 km", tip:"Illuminate la sera: passeggiata piacevole anche dopo cena.", paras:[
+      "Una catena di isolotti boscosi in mezzo al fiume Ness, collegati da ponti pedonali vittoriani in ferro battuto, a dieci minuti a piedi dal centro di Inverness. I ponti furono installati nel 1854, spazzati via da un'alluvione tremenda nel 1849 — sì, la prima versione durò poco — e ricostruiti più solidi. Sono ancora quelli.",
+      "Gli alberi sono enormi: douglasie, sequoie, faggi piantati nell'Ottocento quando gli isolotti furono trasformati in parco pubblico. È un posto dove gli abitanti di Inverness corrono, portano i cani e i bambini, e dove la città smette di sentirsi. Il fiume Ness è corto — poco più di dieci chilometri dal lago al mare — ma porta un volume d'acqua enorme, ed è uno dei migliori fiumi da salmone della Scozia. Se vedete qualcuno immobile in mezzo alla corrente con gli stivaloni fino all'inguine, sta pescando con la mosca, e probabilmente ha pagato parecchio per quel tratto di riva. In autunno, con fortuna, si vedono i salmoni risalire: saltano contro corrente per tornare a deporre le uova esattamente dove sono nati, dopo anni passati nell'Atlantico settentrionale."
+    ]},
+    "Leakey's Bookshop": { zona:"Inverness · Church Street", diff:"Facile", dur:"1 h", dist:"in loco", tip:"Chiude presto e la domenica: controllate gli orari.", paras:[
+      "È la libreria dell'usato più grande della Scozia e sta dentro una chiesa gaelica del 1793, sconsacrata. Centomila volumi su due piani, una scala a chiocciola in ferro, mappe e stampe antiche appese ovunque, e una stufa a legna al centro che d'inverno è accesa e riscalda tutto. L'odore — carta vecchia, fumo di legna, polvere — è la ragione per cui molti ci entrano anche senza voler comprare niente.",
+      "Charles Leakey l'ha aperta nel 1979 e si è trasferito qui nel 1994. Il criterio di ordinamento è personale e non sempre evidente: chiedete, e vi verrà indicato lo scaffale giusto. La sezione di storia scozzese e quella di alpinismo sono notevoli, e ci sono libri in gaelico che non trovereste da nessun'altra parte. Il gaelico scozzese, oggi, è parlato da poco più di cinquantamila persone; a Inverness — il cui nome viene dal gaelico Inbhir Nis, la foce del Ness — quasi nessuno lo usa più per strada, ma i cartelli stradali sono bilingui e nelle scuole si è tornati a insegnarlo. Una libreria come questa, con i suoi scaffali polverosi, è uno dei posti dove la lingua continua a esistere anche quando non la si sente."
+    ]},
+    "Victorian Market": { zona:"Inverness · centro", diff:"Facile", dur:"45 min", dist:"in loco", tip:"La food hall è aperta la sera anche quando i negozi chiudono.", paras:[
+      "Una galleria coperta con il tetto di vetro e ghisa, corridoi che si intrecciano tra Academy Street e Union Street, negozietti minuscoli. Il mercato aprì nel 1870, bruciò completamente nel 1889 e fu ricostruito subito con più ferro e meno legno — la struttura che vedete oggi è quella.",
+      "Per un secolo è stato il cuore commerciale di Inverness: macellai, sarti, calzolai, barbieri. Poi il declino, i negozi vuoti, e negli ultimi anni una rinascita costruita attorno a una food hall con cucine indipendenti e musica dal vivo. Se cercate qualcosa da portare a casa, qui trovate artigiani veri: tessitori di tweed, argentieri, gioiellerie che lavorano ancora il motivo celtico intrecciato. Sul tartan, giusto per sapere: i disegni associati ai singoli clan sono in gran parte un'invenzione ottocentesca, codificata dopo la visita di re Giorgio Quarto a Edimburgo nel 1822, quando Walter Scott organizzò una cerimonia in cui tutti dovevano presentarsi nel tartan della propria famiglia. Molti clan il proprio tartan non ce l'avevano, e i produttori tessili di Lowlands furono felicissimi di inventarglielo. Il che non lo rende meno bello — solo più recente di quanto racconti la cartolina."
+    ]},
+  };
+
+  AUDIO_A = {
+    "George Square": { zona:"Glasgow · centro", diff:"Facile", dur:"30 min", dist:"in piazza", tip:"La sera le City Chambers si illuminano: è il momento migliore per la foto.", paras:[
+      "Siete nel salotto di Glasgow. George Square nasce nel 1781 come piazza residenziale per la borghesia dei mercanti del tabacco, e ancora oggi il rettangolo di arenaria che vi circonda racconta quella ricchezza. Al centro svetta una colonna alta ventiquattro metri: doveva ospitare la statua di re Giorgio Terzo, quello che perse le colonie americane. Quando la notizia della sconfitta arrivò a Glasgow, la città — che sull'America aveva costruito le proprie fortune — si offese a tal punto da cancellare la commissione. Sulla colonna, oggi, c'è Walter Scott, il romanziere che inventò l'immagine romantica della Scozia. È il primo monumento al mondo dedicato a lui, ed è anche il motivo per cui indossa un mantello sulla spalla sbagliata: l'artista lo copiò da un ritratto specchiato.",
+      "Guardate il palazzo sul lato est: sono le City Chambers, inaugurate dalla regina Vittoria nel 1888, e dentro custodiscono più marmo di Carrara del Vaticano. Non è un modo di dire: il consiglio comunale volle una scalinata che mettesse in soggezione chiunque salisse a chiedere favori. Funzionò. Il resto della piazza è un catalogo di statue: Robert Burns, James Watt, l'inventore che qui perfezionò la macchina a vapore mentre riparava un modellino all'università. Se vi sembra che Glasgow si prenda molto sul serio, avete ragione solo a metà: quando il municipio decise di ridipingere l'asfalto di rosso, i giornali locali ci scherzarono sopra per anni. La città sa ridere di sé — è la sua qualità migliore."
+    ]},
+    "West End & Ashton Lane": { zona:"Glasgow · West End", diff:"Facile", dur:"2 h", dist:"a piedi", tip:"Cena presto: dopo le 19 i locali del vicolo si riempiono.", paras:[
+      "Ashton Lane è larga quattro metri, lunga meno di cento, e nell'Ottocento serviva soltanto a portare i cavalli nelle stalle sul retro delle case di Byres Road. Poi, negli anni Settanta, qualcuno aprì un ristorante in una vecchia rimessa. Poi un altro. Poi un cinema in una ex officina meccanica. Oggi il vicolo acciottolato è coperto di lucine tutto l'anno e le facciate sono dipinte di colori che in Scozia si vedono raramente. È il posto dove gli studenti della vicina università festeggiano la fine degli esami, e dove i glaswegians portano gli amici in visita per dimostrare che la loro città sa essere accogliente.",
+      "Il West End intorno merita la passeggiata: strade alberate, terrazze vittoriane di arenaria bionda, librerie dell'usato e negozi vintage. L'Università di Glasgow, in cima alla collina, ha una torre neogotica che assomiglia molto a certi castelli dei film, e infatti ci hanno girato scene di parecchie produzioni. Ma il dettaglio che vale la pena cercare è il Kelvin: il fiumiciattolo che dà il nome al quartiere e al parco, e da cui prende il nome anche il grado Kelvin — Lord Kelvin insegnava qui. Una passeggiata di venti minuti lungo la sua riva vi porta dal centro universitario al museo, sotto ponti di pietra e alberi antichi."
+    ]},
+    "Kelvingrove (esterno)": { zona:"Glasgow · Kelvingrove Park", diff:"Facile", dur:"45 min", dist:"1 km a piedi", tip:"L'ingresso principale è sul retro: entrate dal lato del parco.", paras:[
+      "L'arenaria rossa di Locharbriggs, le torri baroccheggianti, le guglie: il Kelvingrove Art Gallery and Museum sembra una cattedrale, e in un certo senso lo è — è il tempio civico di una città che credeva nell'educazione popolare. Fu costruito con i proventi di una grande esposizione internazionale e aperto nel 1901, con un principio rivoluzionario per l'epoca: ingresso gratuito per tutti. Lo è ancora oggi, ed è il museo più visitato della Scozia.",
+      "Sulla facciata c'è una leggenda che i glaswegians raccontano con gusto: che l'architetto, accortosi di aver costruito l'edificio al contrario, con l'ingresso rivolto verso il parco invece che verso la strada, si sarebbe buttato da una delle torri. Non è vero — l'orientamento era intenzionale, per accogliere i visitatori che arrivavano dall'esposizione — ma la storia è troppo bella per morire. Dentro convivono un Cristo di Salvador Dalí, uno Spitfire appeso al soffitto e un elefante impagliato di nome Sir Roger. Fuori, al tramonto, la pietra rossa si accende e il parco si riempie di gente che corre lungo il fiume. Anche solo la passeggiata attorno, con le guglie che spuntano tra gli alberi, vale la sosta."
+    ]},
+    "Luss · Loch Lomond": { zona:"Loch Lomond", diff:"Facile", dur:"1 h", dist:"passeggiata", tip:"Parcheggio a pagamento all'ingresso: monete o app.", paras:[
+      "Luss è un villaggio di case basse in pietra con i giardini fioriti che arrivano fino alla riva, e la sensazione che sia troppo perfetto per essere autentico è comprensibile — ma è autentico. I cottage furono costruiti nell'Ottocento dai proprietari terrieri per gli operai delle cave di ardesia e per i pescatori, tutti uguali, tutti allineati. Il nome viene probabilmente dal gaelico lus, erba: qui si coltivavano piante medicinali.",
+      "Il Loch Lomond che avete davanti è il lago più grande della Gran Bretagna per superficie, ventiquattro miglia di lunghezza, e segna un confine geologico vero: la Highland Boundary Fault lo attraversa proprio all'altezza delle isole che vedete al centro. A sud le colline sono dolci e verdi, a nord diventano montagne — state guardando l'inizio delle Highlands. La canzone che tutti conoscono, quella della strada alta e della strada bassa, nasce da una storia cupa: due soldati giacobiti prigionieri, uno destinato all'esecuzione e uno alla libertà. La strada bassa, quella che il condannato avrebbe percorso per primo, è la strada dei morti — l'anima che torna a casa sottoterra, più veloce dei vivi. La cantano nei pub come fosse allegra. Non lo è."
+    ]},
+    "Tyndrum — Green Welly Stop": { zona:"Tyndrum", diff:"Facile", dur:"30 min", dist:"sosta", tip:"Ultimo rifornimento comodo prima di Glencoe.", paras:[
+      "Tyndrum ha meno di duecento abitanti e due stazioni ferroviarie: un record britannico, dovuto al fatto che due compagnie rivali dell'Ottocento vollero entrambe la propria linea per la costa. Il Green Welly Stop, aperto nel 1965, è l'istituzione dei road trip scozzesi: metà stazione di servizio, metà emporio, con un reparto di whisky serio e una caffetteria dove tutti si fermano perché dopo non c'è più niente per un bel po'.",
+      "Attorno, sotto la torba, c'è oro. Non è una leggenda: la miniera di Cononish, a pochi chilometri, è l'unica miniera d'oro commerciale della Scozia, e le fedi nuziali fatte con quell'oro si vendono a peso di ricordo. Ma la storia che conta qui è un'altra: nel 1306 Robert the Bruce, in fuga dopo una sconfitta, combatté proprio in questa valle la battaglia di Dalrigh contro il clan MacDougall. Perse, e nella fuga gli strapparono di dosso il mantello con la spilla — la Brooch of Lorne, che i MacDougall conservarono per secoli come trofeo. Bruce si rifugiò tra le montagne, tornò l'anno dopo e vinse tutto. La Scozia è piena di posti così: un parcheggio, un caffè, e sotto una storia che ha cambiato un regno."
+    ]},
+    "Glencoe — Three Sisters": { zona:"Glen Coe", diff:"Facile", dur:"30 min", dist:"belvedere", tip:"Se piove non spostatevi: Glencoe dà il meglio col cielo drammatico.", paras:[
+      "Le tre creste che avete davanti si chiamano Beinn Fhada, Gearr Aonach e Aonach Dubh: sono i contrafforti del massiccio del Bidean nam Bian, e i vittoriani le battezzarono Three Sisters perché faceva più romantico. La valle in cui vi trovate è un cratere vulcanico collassato di quattrocento milioni di anni fa, poi scavato dai ghiacciai fino a diventare questa U perfetta. È il posto più fotografato delle Highlands e, allo stesso tempo, il più cupo.",
+      "Il 13 febbraio 1692, all'alba, centoventi soldati del governo massacrarono qui i loro ospiti. Da dodici giorni vivevano nelle case del clan MacDonald, mangiando al loro tavolo, perché la legge dell'ospitalità nelle Highlands era sacra. Il loro capo aveva giurato fedeltà al re con sei giorni di ritardo, per un errore burocratico. Trentotto persone uccise nel sonno, altre quaranta morte di freddo in montagna mentre fuggivano nella neve. Il tradimento dell'ospitalità è ciò che rese quel massacro indimenticabile, molto più del numero delle vittime. Da allora Glen Coe è la valle del pianto — anche se in realtà il nome è più antico e viene dal fiume Coe. Guardate la pioggia che scende dalle pareti nere: capirete perché la leggenda ha vinto sull'etimologia."
+    ]},
+    "Ben Nevis Distillery": { zona:"Fort William", diff:"Facile", dur:"1 h 30", dist:"visita", tip:"Prenotare online: i tour della domenica si esauriscono.", paras:[
+      "Fondata nel 1825 da John MacDonald, detto Long John — sì, il whisky Long John prende il nome da lui, e sì, era alto quasi due metri. La distilleria sta ai piedi del Ben Nevis, la montagna più alta delle isole britanniche, milleTrecentoquarantacinque metri, e usa l'acqua che scende dai suoi laghetti d'alta quota. È una delle poche distillerie scozzesi che ancora fanno tutto in loco, e una delle poche di proprietà giapponese: la comprò la Nikka nel 1989, in un momento in cui il Giappone stava imparando il whisky dalla Scozia con una serietà quasi religiosa.",
+      "Il whisky di malto si fa con tre ingredienti: orzo, acqua e lievito. Tutto il resto è tempo e legno. L'orzo germina, viene essiccato — a volte sopra fuochi di torba, che è ciò che dà il sapore affumicato — poi macinato, infuso in acqua calda, fermentato e distillato due volte in alambicchi di rame a collo di cigno. Poi passa almeno tre anni in botte, quasi sempre botti americane che hanno già contenuto bourbon, o spagnole che hanno contenuto sherry. Ogni anno circa il due per cento evapora: si chiama la parte degli angeli. In una distilleria come questa, gli angeli si bevono l'equivalente di migliaia di bottiglie all'anno. Nessuno si lamenta."
+    ]},
+    "Glen Garry Viewpoint": { zona:"A87 · Great Glen", diff:"Facile", dur:"20 min", dist:"belvedere", tip:"Piazzola piccola: rallentate per tempo, si supera facilmente.", paras:[
+      "Fermatevi e guardate il lago: la sua forma, vista da qui, ricorda la mappa della Scozia. È una coincidenza geologica che i pullman turistici hanno trasformato in tappa fissa, ma funziona davvero — c'è la testa, c'è la coda, ci sono perfino le isole al posto giusto. Il Loch Garry fa parte del sistema di laghi del Great Glen, la grande faglia che taglia la Scozia in diagonale da Fort William a Inverness.",
+      "Quella faglia è una cicatrice tettonica di oltre quattrocento milioni di anni: due placche che hanno strisciato l'una contro l'altra per decine di chilometri, lasciando una linea dritta che si vede dallo spazio. È per questo che la strada corre così comoda in mezzo alle montagne. Attorno a voi, la vegetazione racconta un'altra storia: le conifere in file ordinate sono piantagioni del Novecento, non foresta antica. La Caledonian Forest originale, quella di pini silvestri, betulle e ginepri, copriva quasi tutte le Highlands e oggi ne resta meno del due per cento. Le distese di erica e torba che sembrano il paesaggio naturale scozzese sono in realtà il risultato di secoli di disboscamento e pascolo. Bellissime, ma sono una ferita che si è fatta panorama."
+    ]},
+    "Eilean Donan Castle": { zona:"Dornie · Kyle of Lochalsh", diff:"Facile", dur:"1 h", dist:"visita", tip:"La foto migliore è dal parcheggio, non dal ponte.", paras:[
+      "Tre lochs si incontrano qui: Loch Duich, Loch Long e Loch Alsh. Sull'isolotto in mezzo, un castello con un ponte di pietra ad arcate. È l'immagine più riprodotta della Scozia — cartoline, latte di biscotti, copertine, film. E quasi tutto quello che vedete ha meno di cent'anni. Il castello originale, del tredicesimo secolo, fu ridotto in macerie nel 1719: durante una rivolta giacobita, una guarnigione di soldati spagnoli si asserragliò qui, e tre fregate della Royal Navy lo bombardarono per tre giorni. Poi fecero saltare le polveriere. Restò un cumulo di pietre per duecento anni.",
+      "Nel 1911 un ufficiale di nome John MacRae-Gilstrap comprò le rovine e decise di ricostruire. Ci mise vent'anni. La leggenda dice che l'artigiano incaricato dei lavori, Farquhar MacRae, sognò la pianta del castello originale e la riprodusse fedelmente — e che quando furono ritrovati dei disegni antichi, combaciavano. Verosimilmente la ricostruzione fu più libera di così: quello che vedete è un castello romantico del Novecento costruito sopra fondamenta medievali. Ma non toglietegli nulla. Il ponte a tre arcate, l'acqua che riflette la pietra, le montagne del Kintail dietro: pochi posti al mondo sanno essere altrettanto teatrali senza sembrare finti."
+    ]},
+    "The Lump (Am Meall)": { zona:"Portree · Skye", diff:"Facile", dur:"40 min", dist:"1 km", tip:"Sentiero fangoso dopo la pioggia: scarpe chiuse.", paras:[
+      "Am Meall, la collinetta: è il promontorio boscoso che chiude il porto di Portree a sud, e in dieci minuti di salita vi regala la vista migliore sulla cittadina. Da lassù si vedono le casette colorate del molo, la baia, i Cuillin all'orizzonte e, nelle giornate limpide, il profilo dell'Old Man of Storr a nord.",
+      "In cima c'è una torretta di pietra che sembra un castello in miniatura: è una folly vittoriana, costruita come punto panoramico e per dare lavoro nei periodi di carestia. Il prato attorno, che oggi sembra solo un bel posto per un picnic, ha una storia meno gentile: qui si tenevano le esecuzioni pubbliche, e più tardi ci fu l'ippodromo dell'isola e il campo dei Highland Games. Portree stessa deve il nome a una visita reale: Port Rìgh, il porto del re, dal passaggio di Giacomo Quinto nel 1540, arrivato con una flotta per convincere i clan dell'isola a comportarsi bene. Prima si chiamava Kiltaraglen. Il re passò una volta sola, ma il nome è rimasto per sempre — la Scozia funziona anche così."
+    ]},
+    "Porto di Portree": { zona:"Portree · Skye", diff:"Facile", dur:"1 h", dist:"lungomare", tip:"La foto classica si scatta da Bosville Terrace, in alto.", paras:[
+      "La fila di case rosa, azzurre, gialle e verdi lungo il molo è l'immagine che tutti si portano via da Skye. Non è un vezzo turistico: dipingere le facciate era il modo più economico per proteggere l'intonaco dall'umidità atlantica, e i colori vivaci servivano a riconoscere le case nella nebbia. Portree ha circa duemilacinquecento abitanti ed è la capitale dell'isola: qui c'è l'ospedale, la scuola superiore, il supermercato. Tutto il resto di Skye vive di villaggi da poche decine di anime.",
+      "Il porto fu progettato nell'Ottocento da Thomas Telford, l'ingegnere che ha costruito mezza Scozia moderna: strade, ponti, canali, e centinaia di porticcioli per l'industria dell'aringa. Quella pesca è finita da tempo, ma le barche che vedete ancora escono — oggi per portare i turisti a vedere aquile di mare e foche lungo la costa del Trotternish. Se vi va, la sera nei pub del lungomare capita di trovare musica dal vivo: fiddle, chitarra, a volte una cornamusa. Non è messa in scena per i visitatori, o non solo: a Skye il gaelico si parla ancora, e la musica è il modo in cui la lingua resiste."
+    ]},
+  };
+
+  IMG = {
+    georgesquare: "imgc/george-square.jpg",
+    luss: "imgc/luss.jpg",
+    glengarry: "imgc/glengarry.jpg",
+    storrdawn: "imgc/storr-dawn.jpg",
+    leakeys: "imgc/leakeys.jpg",
+    victorianmarket: "imgc/victorian-market.jpg",
+    nessislands: "imgc/ness-islands.jpg",
+    invernesscastle: "imgc/inverness-castle.jpg",
+    invermoriston: "imgc/invermoriston.jpg",
+    fivesisters: "imgc/five-sisters.jpg",
+    neistpoint: "imgc/neist-point.jpg",
+    coralbeach: "imgc/coral-beach.jpg",
+    sligachan: "imgc/sligachan.jpg",
+    kiltrock: "imgc/kilt-rock.jpg",
+    quiraing: "imgc/quiraing.jpg",
+    fairyglen: "imgc/fairy-glen.jpg",
+    portree: "imgc/portree.jpg",
+    thelump: "imgc/the-lump.jpg",
+    glencoe: "imgc/glencoe.jpg",
+    ashtonlane: "imgc/ashton-lane.jpg",
+    kelvingrove: "imgc/kelvingrove.jpg",
+    highlands: "https://images.pexels.com/photos/3072141/pexels-photo-3072141.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    eilean: "https://images.unsplash.com/photo-1483322314125-655a591f2d41",
+    road: "https://images.pexels.com/photos/13368192/pexels-photo-13368192.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    glasgow: "https://images.unsplash.com/photo-1544390099-31827259a011",
+    edinburgh: "https://images.unsplash.com/photo-1535448033526-c0e85c9e6968?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxlZGluYnVyZ2glMjBjYXN0bGV8ZW58MHx8fHwxNzgyNTQ3ODYxfDA&ixlib=rb-4.1.0&q=85",
+    lochness: "https://images.unsplash.com/photo-1700485639640-a26f9b4aabc0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxsb2NoJTIwbmVzcyUyMG1vbnN0ZXJ8ZW58MHx8fHwxNzgyNTQwMzMyfDA&ixlib=rb-4.1.0&q=85",
+    fortwilliam: "https://images.pexels.com/photos/3072141/pexels-photo-3072141.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    lochlomond: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
+    skye: "https://images.pexels.com/photos/31240297/pexels-photo-31240297.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    inverness: "https://images.unsplash.com/photo-1700485639640-a26f9b4aabc0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxsb2NoJTIwbmVzcyUyMG1vbnN0ZXJ8ZW58MHx8fHwxNzgyNTQwMzMyfDA&ixlib=rb-4.1.0&q=85",
+    castle: "https://images.unsplash.com/photo-1483322314125-655a591f2d41",
+    whisky: "https://images.pexels.com/photos/13255984/pexels-photo-13255984.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    nature: "https://images.pexels.com/photos/30660072/pexels-photo-30660072.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    food: "https://images.unsplash.com/photo-1478145046317-39f10e56b5e9",
+    books: "https://images.pexels.com/photos/17910625/pexels-photo-17910625.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    games: "https://images.pexels.com/photos/28199959/pexels-photo-28199959.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  };
+
+  DAYS = [
+    { id:"d1", dateShort:"3 OTT", kicker:"GIORNO 0 · SABATO", title:"Arrivo a Glasgow", subtitle:"Benvenuti in Scozia", zoom:13,
+      icon:"M3 20h18M5 20V9h4v11M11 20V5h4v15M17 20v-7h3v7",
+      meta:[{t:"✈ Arrivo"},{t:"☾ notte a Glasgow",night:true}],
+      go:"Atterraggio a Glasgow e trasferimento in centro con il Bus Express 500. Serata di ambientamento tra George Square e il West End.",
+      attractions:[
+        {name:"George Square",note:"Il salotto vittoriano della città.",lat:55.8609,lng:-4.2514,img:"georgesquare",kind:"audio",desc:"Il cuore civico di Glasgow dal 1781, circondato dalle City Chambers in stile vittoriano e popolato di statue: Walter Scott svetta sulla colonna centrale. È il punto di partenza naturale per capire la città — e la sera si illumina che è un piacere."},
+        {name:"West End & Ashton Lane",note:"Vicolo acciottolato pieno di pub e lucine.",lat:55.8722,lng:-4.2932,chicca:true,img:"ashtonlane",kind:"curio",desc:"Il quartiere bohémien di Glasgow: librerie, vintage e l'università che sembra Hogwarts. Ashton Lane è un vicolo acciottolato coperto di lucine, perfetto per la prima cena scozzese e una pinta in un pub con musica dal vivo."},
+        {name:"Kelvingrove (esterno)",note:"Se resta luce: il palazzo rosso nel parco.",lat:55.8686,lng:-4.2906,img:"kelvingrove",kind:"audio",desc:"Il museo più visitato di Scozia, in un palazzo di arenaria rossa dentro il parco di Kelvingrove. Anche solo dall'esterno, al tramonto, vale la passeggiata lungo il fiume Kelvin."},
+      ],
+      notes:["Domani mattina ritiro dell'auto in centro."] },
+    { id:"d2", dateShort:"4 OTT", kicker:"GIORNO 1 · DOMENICA", title:"Glasgow → Fort William", subtitle:"Due itinerari, secondo il tempo",
+      icon:"M2 20l6-10 4 6 3-4 7 8zM17 6a2 2 0 1 0 .01 0",
+      meta:[{t:"~174 km"},{t:"☾ notte a Fort William",night:true}],
+      go:"Scegli il piano in base al meteo: con tempo asciutto si entra nella Lost Valley; con pioggia si resta su soste panoramiche e al coperto.",
+      attractions:[
+        {name:"Luss · Loch Lomond",note:"10:40–11:10 · Villaggio e lungolago.",lat:56.1019,lng:-4.6403,img:"luss",kind:"curio",desc:"Un villaggio da cartolina sulla riva ovest del Loch Lomond: cottage in pietra dell'Ottocento, rose sulle facciate e un pontile che entra nel lago."},
+        {name:"Tyndrum — Green Welly Stop",note:"12:00–12:45 · Pranzo e rifornimento.",lat:56.4367,lng:-4.7113,img:"road",kind:"curio",desc:"Sosta pranzo e ultimo grande punto di rifornimento comodo prima del tratto più isolato verso Glencoe."},
+        {name:"Wee White House",note:"13:35–14:00 · Lagangarbh Hut ai piedi del Buachaille Etive Mòr.",lat:56.6506,lng:-4.8919,img:"glencoe",kind:"curio",desc:"La piccola casa bianca di Lagangarbh ai piedi del Buachaille Etive Mòr, una delle immagini più riconoscibili delle Highlands."},
+        {name:"Lost Valley hike",note:"14:10–16:40 · Coire Gabhail, 4–5 km A/R.",lat:56.6620,lng:-4.9900,img:"glencoe",kind:"audio",desc:"Escursione nella valle nascosta tra le Three Sisters: circa 2,5 ore andata e ritorno, dislivello 260–335 m, con attraversamento del fiume e un tratto di salita su roccia."},
+      ],
+      notes:["Due piani alternativi: scegli quello adatto alle condizioni del giorno."],
+      routes:{
+        A:{
+          routeTitle:"☀ Piano A", routeSub:"Sereno / asciutto",
+          meta:[{t:"~174 km · arrivo ~17:05"},{t:"☾ notte a Fort William",night:true}],
+          go:"9:30 ritiro auto e assestamento alla guida a sinistra. Poi Luss, pranzo a Tyndrum, Wee White House e Lost Valley hike. Arrivo a Fort William verso le 17:05.",
+          attractions:[
+            {name:"Luss · Loch Lomond",note:"10:40–11:10 · Lungolago e villaggio, 20–30 min.",lat:56.1019,lng:-4.6403,img:"luss",kind:"curio",desc:"Un villaggio di casette in pietra sul Loch Lomond, con spiaggia e vista verso Ben Lomond. Passeggiata breve e pianeggiante sul lungolago."},
+            {name:"Tyndrum — Green Welly Stop",note:"12:00–12:45 · Pranzo: Real Food Cafe o Green Welly Stop.",lat:56.4367,lng:-4.7113,img:"road",kind:"curio",desc:"Sosta pranzo e rifornimento. È l'ultimo grande punto comodo prima del tratto più isolato verso Glencoe."},
+            {name:"Wee White House",note:"13:35–14:00 · Lagangarbh Hut, 20–25 min per le foto.",lat:56.6506,lng:-4.8919,img:"glencoe",kind:"curio",desc:"La casetta bianca ai piedi del Buachaille Etive Mòr. Dal layby di Altnafeadh si attraversa con attenzione la strada e si segue il sentiero lungo il fiume Coupall."},
+            {name:"Lost Valley hike",note:"14:10–16:40 · 4–5 km A/R · dislivello ~260–335 m.",lat:56.6620,lng:-4.9900,img:"glencoe",kind:"audio",desc:"Coire Gabhail: discesa iniziale, attraversamento del fiume su ponte o pietre e salita finale con un tratto di arrampicata leggera fino alla valle nascosta tra le Three Sisters. Circa 2,5 ore complessive."},
+          ],
+          notes:["Scarponi impermeabili, strati e possibilmente bastoncini per la Lost Valley.","Se preferite il picnic nella valle, comprate il pranzo a Tyndrum.","Tramonto a Fort William ~18:35: arrivo previsto con oltre un'ora di margine."]
+        },
+        B:{
+          routeTitle:"☂ Piano B", routeSub:"Pioggia / ha piovuto molto",
+          meta:[{t:"~174 km · arrivo ~16:30"},{t:"☾ notte a Fort William",night:true}],
+          go:"9:30 ritiro auto e assestamento alla guida. Luss in versione breve, pranzo al coperto al The Drovers Inn, Wee White House, vista delle Three Sisters e Glencoe Visitor Centre. Arrivo verso le 16:30.",
+          attractions:[
+            {name:"Luss · Loch Lomond",note:"10:40–11:00 · Giro breve e foto dal molo.",lat:56.1019,lng:-4.6403,img:"luss",kind:"curio",desc:"Con la pioggia: giro veloce del villaggio e foto dal molo, senza allungare troppo la passeggiata sul lungolago."},
+            {name:"The Drovers Inn",note:"11:20–12:30 · Pranzo al riparo a Inverarnan.",lat:56.3280,lng:-4.7240,img:"lochlomond",kind:"curio",desc:"Pub storico del 1705 vicino a Loch Lomond, famoso per l'atmosfera d'epoca. Una sosta calda e al coperto perfetta quando fuori piove."},
+            {name:"Wee White House",note:"13:30–13:50 · Foto dal layby se piove forte.",lat:56.6506,lng:-4.8919,img:"glencoe",kind:"curio",desc:"In caso di pioggia forte la foto funziona anche restando vicino all'auto, dal layby di Altnafeadh, senza inoltrarsi sul sentiero bagnato."},
+            {name:"Glencoe — Three Sisters",note:"14:00–14:30 · Solo vista dal layby, niente hike.",lat:56.6580,lng:-4.9970,img:"glencoe",kind:"audio",desc:"Vista panoramica classica sulle Three Sisters dal layby The Study. Nessun cammino necessario: con pioggia forte niente Lost Valley."},
+            {name:"Glencoe Visitor Centre",note:"~15:00–16:00 · Mostra, Turf House, café e viewpoint.",lat:56.6660,lng:-5.0645,img:"nature",kind:"curio",desc:"Centro visitatori del National Trust for Scotland con mostra sulla storia di Glencoe, ricostruzione della Turf House, breve filmato, punto panoramico, café e negozio."},
+          ],
+          notes:["Niente Lost Valley con pioggia forte: attraversamento del fiume e rocce in salita diventano scivolosi.","Gli orari del Glencoe Visitor Centre possono cambiare con la stagione: controllarli un paio di giorni prima.","Le Highland cows possono essere presenti nella zona, ma non è garantito: mantenere sempre le distanze."]
+        }
+      } },
+    { id:"d3", dateShort:"5 OTT", kicker:"GIORNO 2 · LUNEDÌ", title:"Fort William → Portree", subtitle:"Eilean Donan e il ponte per Skye",
+      icon:"M4 20V9h3V6h2v3h2V6h2v3h2V6h2v3h3v11zM10 20v-5h4v5",
+      meta:[{t:"~210 km · 3h–3h30"},{t:"☾ notte a Portree",night:true}],
+      go:"Rotta interna via Great Glen: viewpoint di Glen Garry, il castello di Eilean Donan e poi il ponte per Skye. Sistemazione a Lachie's Cabin e tramonto sul porto di Portree.",
+      attractions:[
+        {name:"Glen Garry Viewpoint",note:"Picnic con la vista 'mappa della Scozia'.",lat:57.0666,lng:-5.0468,chicca:true,img:"glengarry",kind:"curio",desc:"Dal belvedere sulla A87 il Loch Garry, visto dall'alto, disegna esattamente la sagoma della Scozia — una coincidenza che nessuna foto rende come dal vivo. La vista migliore è attraversando la strada e salendo il breve sentiero di fronte al parcheggio. Picnic d'obbligo."},
+        {name:"Eilean Donan Castle",note:"Il castello più fotografato di Scozia, tra tre lochs.",lat:57.2740,lng:-5.5164,img:"eilean",kind:"audio",desc:"Su un isolotto dove si incontrano tre lochs, collegato alla terraferma da un ponte in pietra: è il castello più fotografato di Scozia e set di film e leggende. Distrutto nel 1719 e ricostruito pietra su pietra nel Novecento. Anche solo l'esterno vale la sosta."},
+        {name:"The Lump (Am Meall)",note:"Salita breve: vista su porto, Cuillins e Storr.",lat:57.4110,lng:-6.1945,chicca:true,img:"thelump",kind:"curio",desc:"La collinetta boscosa che chiude il porto di Portree: 15–20 minuti di salita facile e si apre la vista su tutto — il porto, i Cuillins, e lo Storr in lontananza. Perfetta per il tardo pomeriggio, con il tramonto verso le 18:30."},
+        {name:"Porto di Portree",note:"Le casette colorate — foto da Bosville Terrace.",lat:57.4128,lng:-6.1918,img:"portree",kind:"audio",desc:"La fila di casette rosa, azzurre e gialle sul molo è il simbolo di Skye. La foto migliore si scatta dall'ingresso nord, su Bosville Terrace. La sera i ristoranti di pesce sul porto si riempiono: meglio prenotare."},
+      ],
+      notes:["Niente traghetti su questa rotta: nessuna dipendenza da meteo od orari.","Old Man of Storr rimandato a domani, con la luce giusta."] },
+    { id:"d4", dateShort:"6 OTT", kicker:"GIORNO 3 · MARTEDÌ", title:"Anello del Trotternish", subtitle:"Storr, Kilt Rock, Quiraing e Fairy Glen",
+      icon:"M4 20L9 5l2 7 2-9 4 17zM2 20h20",
+      meta:[{t:"Giornata su Skye"},{t:"☾ notte a Portree",night:true}],
+      go:"Il giro della penisola più spettacolare di Skye, in senso orario da Portree: pinnacoli, scogliere e paesaggi delle fate. Ritorno nel pomeriggio.",
+      attractions:[
+        {name:"Old Man of Storr",note:"Presto, per la luce migliore e meno folla.",lat:57.5076,lng:-6.1830,img:"storrdawn",kind:"audio",desc:"Il pinnacolo di roccia di 48 metri che veglia su Skye, resto di un'antica frana gigante. La camminata sale ripida tra i pascoli (circa 2 ore a/r) e la luce del primo mattino è la migliore — oltre a esserci molta meno gente."},
+        {name:"Kilt Rock & Mealt Falls",note:"Scogliera a strisce con cascata che si getta in mare.",lat:57.6110,lng:-6.1740,img:"kiltrock",kind:"curio",desc:"La scogliera con colonne di basalto che ricordano le pieghe di un kilt, e la cascata di Mealt che si getta per 55 metri direttamente nell'oceano. Con il vento giusto, la cascata 'suona' attraverso la ringhiera del belvedere. Sosta a bordo strada."},
+        {name:"Quiraing",note:"I punti panoramici di Prison e Table.",lat:57.6430,lng:-6.2660,img:"quiraing",kind:"audio",desc:"Il paesaggio più surreale di Skye: una frana ancora in movimento che ha creato torri, altipiani nascosti e pareti verdi. Giro completo di 6,5 km in 2–3 ore, oppure i primi 30–40 minuti di sentiero bastano per i punti migliori: la Prison e la Table."},
+        {name:"Fairy Glen",note:"Paesaggio in miniatura vicino a Uig, poco conosciuto.",lat:57.5860,lng:-6.3230,chicca:true,img:"fairyglen",kind:"curio",desc:"Una valle in miniatura di collinette coniche, laghetti e spirali di pietra vicino a Uig. Sembra modellata dalle fate — da cui il nome — ed è ancora poco conosciuta. Mezz'ora di passeggiata fuori dai sentieri battuti."},
+      ],
+      notes:["Strade a binario unico verso il Quiraing: calma e piazzole.","Scarpe da trekking: sentieri scivolosi con la pioggia."] },
+    { id:"d5", dateShort:"7 OTT", kicker:"GIORNO 4 · MERCOLEDÌ", title:"Ovest di Skye", subtitle:"Sligachan, Coral Beach e Neist Point", hero:"neistpoint",
+      icon:"M10 20L11 4h2l1 16M9 8h6M7 20h10M4 5l3 2M20 5l-3 2",
+      meta:[{t:"Giornata lunga"},{t:"☾ notte a Portree",night:true}],
+      go:"L'ovest selvaggio dell'isola: il ponte delle fate a Sligachan, la distilleria Talisker, la spiaggia di corallo di Claigan e il faro di Neist Point per il tramonto.",
+      attractions:[
+        {name:"Sligachan Old Bridge",note:"Viso nell'acqua gelida 7 secondi = bellezza eterna.",lat:57.2905,lng:-6.1750,chicca:true,img:"sligachan",kind:"curio",desc:"Il vecchio ponte in pietra con i Cuillins alle spalle è già di suo una delle viste più belle di Skye. Ma la leggenda è meglio: immergere il viso nel fiume per 7 secondi e lasciarlo asciugare all'aria dona la bellezza eterna. L'acqua è gelida — la bellezza si paga."},
+        {name:"Talisker Distillery",note:"Tour e degustazione a Carbost. Prenotare.",lat:57.3020,lng:-6.3560,chicca:true,img:"whisky",kind:"curio",desc:"La distilleria più antica di Skye (1830), sulla riva del Loch Harport a Carbost. Il suo whisky torbato e 'marino' sa di fumo e di mare. Tour con degustazione di circa un'ora — meglio prenotare."},
+        {name:"Claigan Coral Beach",note:"Spiaggia bianca di alghe calcificate — picnic.",lat:57.4770,lng:-6.6320,chicca:true,img:"coralbeach",kind:"curio",desc:"Una spiaggia bianca che sembra caraibica, fatta non di sabbia ma di alghe calcificate sbriciolate dal mare. Mezz'ora a piedi a/r dal parcheggio, acqua turchese e pecore sullo sfondo: il posto perfetto per il picnic."},
+        {name:"Neist Point Lighthouse",note:"Restare per il tramonto: il momento migliore.",lat:57.4230,lng:-6.7880,img:"neistpoint",kind:"audio",desc:"Il faro del 1909 sulla punta più occidentale di Skye, in fondo a una passeggiata spettacolare sulla scogliera (circa un'ora a/r). È IL posto per il tramonto sull'Atlantico — restare fino alle 18:30 e portare uno strato in più: qui il vento non manca mai."},
+      ],
+      notes:["Molta guida su strade a binario unico — taglio naturale: Talisker.","Neist Point è quasi sempre ventoso: portare strati."] },
+    { id:"d6", dateShort:"8 OTT", kicker:"GIORNO 5 · GIOVEDÌ", title:"Portree → Inverness", subtitle:"Giornata rilassante lungo Loch Ness",
+      icon:"M3 16c2-2 4-2 6 0s4 2 6 0M15 15c0-5 5-6 5-1M19 11a.8.8 0 1 0 .01 0",
+      meta:[{t:"~165 km · 2h45"},{t:"☾ notte a Inverness",night:true}],
+      go:"Si lascia Skye e si costeggia Loch Ness fino a Inverness: cascate di Invermoriston, il castello restaurato e una serata tra librerie e mercati vittoriani.",
+      attractions:[
+        {name:"Five Sisters of Kintail",note:"Belvedere lungo Glen Shiel, sosta foto.",lat:57.1900,lng:-5.3500,img:"fivesisters",kind:"audio",desc:"Le cinque sorelle di pietra salutano anche al ritorno: stessa vista del Giorno 2, ma con la luce del mattino dalla direzione opposta. Sosta foto veloce lungo Glen Shiel."},
+        {name:"Invermoriston Falls",note:"Cascata e vecchio ponte di Telford nel bosco.",lat:57.2130,lng:-4.6180,chicca:true,img:"invermoriston",kind:"curio",desc:"Una cascata nascosta nel bosco dove il fiume Moriston si tuffa verso Loch Ness, scavalcata dal vecchio ponte di Thomas Telford (1813). Quindici minuti di camminata tra gli alberi, a zero deviazione dalla strada."},
+        {name:"Inverness Castle Experience",note:"Riaperto nel 2026, terrazza panoramica. Prenotare.",lat:57.4760,lng:-4.2250,img:"invernesscastle",kind:"audio",desc:"Il castello rosa che veglia sul fiume Ness, riaperto nel 2026 dopo un grande restauro: un racconto immersivo delle Highlands e una terrazza con vista su tutta la città. Circa un'ora e mezza — prenotare in anticipo."},
+        {name:"Ness Islands",note:"Isolotti boscosi e ponticelli vittoriani sul fiume.",lat:57.4650,lng:-4.2340,img:"nessislands",kind:"curio",desc:"Una passeggiata piatta e rilassante tra isolotti boscosi collegati da ponticelli vittoriani in ghisa, in mezzo al fiume Ness. Il posto giusto per rallentare dopo giorni di Highlands."},
+        {name:"Leakey's Bookshop",note:"Libreria dell'usato in una vecchia chiesa.",lat:57.4790,lng:-4.2280,chicca:true,img:"leakeys",kind:"curio",desc:"La più grande libreria dell'usato di Scozia, dentro una chiesa gaelica del Settecento, con una stufa a legna che scoppietta al centro e scale a chiocciola tra torri di libri. Un posto fuori dal tempo."},
+        {name:"Victorian Market",note:"Negozietti e food hall per la sera.",lat:57.4787,lng:-4.2255,img:"victorianmarket",kind:"curio",desc:"La galleria coperta del 1890 con negozietti tipici, artigiani e una food hall rinnovata: l'opzione perfetta per un aperitivo o una cena informale in centro."},
+      ],
+      notes:["In centro non serve l'auto: tutto a 10–15 min a piedi."] },
+    { id:"d7", dateShort:"9 OTT", kicker:"GIORNO 6 · VENERDÌ", title:"Inverness → Edimburgo", subtitle:"In treno sulla Highland Main Line", hero:"edinburgh", mode:"train",
+      icon:"M6 3h12v13H6zM6 11h12M9 6h6M8 16l-2 4M16 16l2 4M9.5 13.5a.8.8 0 1 0 .01 0M14.5 13.5a.8.8 0 1 0 .01 0",
+      meta:[{t:"🚂 treno ~3h30"},{t:"☾ notte a Edimburgo",night:true}],
+      go:"Consegna dell'auto al mattino e treno panoramico verso sud attraverso il Cairngorms. Possibile sosta a Pitlochry, poi arrivo a Edimburgo.",
+      attractions:[
+        {name:"Highland Main Line",note:"Uno dei treni più panoramici di Gran Bretagna.",lat:57.4800,lng:-4.2230,img:"road",kind:"curio",desc:"Tre ore e mezza di finestrino spettacolare: il treno attraversa il parco nazionale dei Cairngorms, tocca il passo di Drumochter (il punto ferroviario più alto di Gran Bretagna) e scende tra foreste e fiumi fino a Edimburgo."},
+        {name:"Pitlochry",note:"Sosta facoltativa: cittadina termale vittoriana a metà strada.",lat:56.7040,lng:-3.7330,chicca:true,img:"nature",kind:"curio",desc:"Cittadina termale vittoriana a metà strada, perfetta per spezzare il viaggio: pranzo, passeggiata sul fiume Tummel e la scala dei salmoni della diga. Richiede un biglietto flessibile per poter scendere e ripartire."},
+        {name:"Edinburgh Waverley",note:"Arrivo nel cuore della città.",lat:55.9520,lng:-3.1890,img:"edinburgh",kind:"audio",desc:"Si arriva direttamente nel cuore della città, in una valle tra Old Town e New Town: usciti dalla stazione, il castello è già lì sopra. È l'unica stazione al mondo intitolata a un romanzo — il 'Waverley' di Walter Scott."},
+      ],
+      notes:["Consegna auto presto: verificare gli orari dell'agenzia.","Arrivo in tarda mattinata: pomeriggio libero in Old Town."] },
+    { id:"d8", dateShort:"10 OTT", kicker:"GIORNO 7 · SABATO", title:"Edimburgo", subtitle:"Giornata libera — da programmare", zoom:13,
+      icon:"M11 3v5M11 3h5l-2 2 2 2h-5M6 20V10h9v10M3 20h18",
+      meta:[{t:"Libera"},{t:"☾ notte a Edimburgo",night:true}],
+      go:"Lasciata libera di proposito. Qualche idea sulla mappa, da organizzare a parte.",
+      attractions:[
+        {name:"Edinburgh Castle",note:"La fortezza sulla roccia vulcanica.",lat:55.9486,lng:-3.1999,img:"edinburgh",kind:"audio",desc:"La fortezza sulla roccia vulcanica che domina la città da 900 anni: i gioielli della corona scozzese, la Stone of Destiny e il cannone dell'una in punto. Da qui parte tutto il Royal Mile."},
+        {name:"Royal Mile",note:"Il miglio reale tra castello e Holyrood.",lat:55.9502,lng:-3.1837,img:"edinburgh",kind:"audio",desc:"Il miglio in discesa che collega il castello al palazzo di Holyrood, tra vicoli nascosti (i 'closes'), cattedrali e cornamuse. Ogni portone ha una storia — molte finiscono nei sotterranei infestati."},
+        {name:"Arthur's Seat",note:"Il vulcano spento con vista sulla città.",lat:55.9440,lng:-3.1620,img:"highlands",kind:"audio",desc:"Il vulcano spento nel cuore della città: un'ora di salita facile e si vede tutta Edimburgo fino al mare. Il posto migliore dove capire perché la chiamano 'la città costruita su sette colli'."},
+        {name:"Calton Hill",note:"Il tramonto più bello di Edimburgo.",lat:55.9553,lng:-3.1583,chicca:true,img:"edinburgh",kind:"curio",desc:"La collina dei monumenti neoclassici — il 'Partenone incompiuto' che valse a Edimburgo il soprannome di Atene del Nord. Dieci minuti di salita per il tramonto più fotografato della città."},
+        {name:"Dean Village",note:"Angolo fiabesco sul Water of Leith.",lat:55.9520,lng:-3.2190,chicca:true,img:"lochlomond",kind:"curio",desc:"Un villaggio di mugnai del XII secolo nascosto in una valletta a dieci minuti dal centro: case a graticcio sull'acqua, ponti in pietra e silenzio. L'angolo più fiabesco di Edimburgo."},
+      ],
+      notes:[] },
+    { id:"d9", dateShort:"11 OTT", kicker:"GIORNO 8 · DOMENICA", title:"Partenza", subtitle:"Ultimo sguardo e rientro", hero:"edinburgh", zoom:11,
+      icon:"M2 14l20-8-8 20-2.5-8.5zM11.5 17.5L22 6",
+      meta:[{t:"✈ In base al volo"}],
+      go:"Ultime ore a Edimburgo prima del volo. Alba gu bràth!",
+      attractions:[
+        {name:"Aeroporto di Edimburgo",note:"Tram o bus Airlink dal centro.",lat:55.9500,lng:-3.3725,img:"road",kind:"curio",desc:"Tram o bus Airlink dal centro in circa mezz'ora. Ultimo sguardo al castello dal finestrino: la Scozia si saluta sempre con un arrivederci — Alba gu bràth."},
+      ],
+      notes:[] },
+  ];
+
+  CITY_PINS = [
+    { n:1, lat:55.8642, lng:-4.2518, label:"Glasgow", day:"d1" },
+    { n:2, lat:56.8198, lng:-5.1052, label:"Fort William", day:"d2" },
+    { n:3, lat:57.4130, lng:-6.1930, label:"Portree", day:"d3" },
+    { n:4, lat:57.4778, lng:-4.2247, label:"Inverness", day:"d6" },
+    { n:5, lat:55.9533, lng:-3.1883, label:"Edimburgo", day:"d7" },
+  ];
+  DRIVE = [[55.8642,-4.2518],[56.1019,-4.6403],[56.4367,-4.7113],[56.6580,-4.9970],[56.8198,-5.1052],[57.0666,-5.0468],[57.1900,-5.3500],[57.2740,-5.5164],[57.2799,-5.7420],[57.4130,-6.1930]];
+  DRIVE_BACK = [[57.4130,-6.1930],[57.2799,-5.7420],[57.2740,-5.5164],[57.1900,-5.3500],[57.0666,-5.0468],[57.2130,-4.6180],[57.4778,-4.2247]];
+  TRAIN = [[57.4778,-4.2247],[56.7040,-3.7330],[55.9533,-3.1883]];
+
+  _tiles(map) {
+    window.L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+      attribution: "© OpenStreetMap · © CARTO", maxZoom: 18,
+    }).addTo(map);
+  }
+
+  _activeDay(d) {
+    if (!d || !d.routes) return d;
+    const r = d.routes[this.state.routeChoice] || d.routes.A;
+    return { ...d, ...r, routes: d.routes };
+  }
+
+  _ensureMaps() {
+    const L = window.L;
+    if (!L) { clearTimeout(this._lt); this._lt = setTimeout(() => this._ensureMaps(), 250); return; }
+    const el = this.mainMapRef.current;
+    if (el && !el._sczMap) {
+      const map = L.map(el, { zoomControl: false, attributionControl: true });
+      el._sczMap = map;
+      this._tiles(map);
+      L.polyline(this.DRIVE, { color: "#C4553A", weight: 3, dashArray: "8 6" }).addTo(map);
+      L.polyline(this.DRIVE_BACK, { color: "#C4553A", weight: 3, dashArray: "8 6", opacity: .55 }).addTo(map);
+      L.polyline(this.TRAIN, { color: "#17324E", weight: 3, dashArray: "2 8" }).addTo(map);
+      this._cityMarkers = this.CITY_PINS.map(p => {
+        const mk = L.marker([p.lat, p.lng], {
+          icon: L.divIcon({ className: "", html: `<div class="scz-pin" data-day="${p.day}">${p.n}</div>`, iconSize: [28, 28], iconAnchor: [14, 14] }),
+        }).addTo(map);
+        mk.bindTooltip(p.label, { direction: "bottom", offset: [0, 12] });
+        mk.on("click", () => this.setState({ openDay: p.day }));
+        return { pin: p, mk };
+      });
+      map.fitBounds(L.latLngBounds(this.CITY_PINS.map(p => [p.lat, p.lng])).pad(0.18));
+      setTimeout(() => map.invalidateSize(), 60);
+    }
+    if (el && el._sczMap && this._cityMarkers) {
+      this._cityMarkers.forEach(({ pin, mk }) => {
+        const div = mk.getElement() && mk.getElement().querySelector(".scz-pin");
+        if (div) div.classList.toggle("active", pin.day === this.state.openDay);
+      });
+    }
+    const del = this.dayMapRef.current;
+    const baseDay = this.DAYS.find(x => x.id === this.state.dayView);
+    const mapKey = this.state.dayView ? this.state.dayView + (baseDay && baseDay.routes ? ":" + this.state.routeChoice : "") : null;
+    if (del && del._sczFor !== mapKey) {
+      if (del._sczMap) { del._sczMap.remove(); del._sczMap = null; }
+      const d = this._activeDay(baseDay);
+      if (d) {
+        const map = L.map(del, { zoomControl: false, attributionControl: false, dragging: true, scrollWheelZoom: false });
+        del._sczMap = map; del._sczFor = mapKey;
+        this._tiles(map);
+        d.attractions.forEach((a, i) => {
+          const mk = L.marker([a.lat, a.lng], {
+            icon: L.divIcon({ className: "", html: `<div class="scz-poi${a.chicca ? " gold" : ""}"></div>`, iconSize: [16, 16], iconAnchor: [8, 8] }),
+          }).addTo(map);
+          mk.bindTooltip(a.name, { direction: "top", offset: [0, -8] });
+          mk.on("click", () => this.setState({ detail: { day: d.id, idx: i } }));
+        });
+        const b = L.latLngBounds(d.attractions.map(a => [a.lat, a.lng]));
+        if (d.attractions.length === 1) map.setView([d.attractions[0].lat, d.attractions[0].lng], d.zoom || 12);
+        else map.fitBounds(b.pad(0.25));
+        setTimeout(() => map.invalidateSize(), 60);
+        this._drawRoute(map, d);
+      }
+    }
+  }
+
+  async _drawRoute(map, d) {
+    const L = window.L;
+    const pts = d.attractions;
+    if (!pts || pts.length < 2) return;
+    // dashed straight fallback first (in case routing fails / offline)
+    const fb = L.polyline(pts.map(a => [a.lat, a.lng]), { color: "#C4553A", weight: 2, dashArray: "5 6", opacity: .45 }).addTo(map);
+    if (d.mode === "train") return; // no road route on train day
+    try {
+      const coords = pts.map(a => `${a.lng},${a.lat}`).join(";");
+      const url = `https://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson`;
+      const res = await fetch(url);
+      const json = await res.json();
+      const line = json && json.routes && json.routes[0] && json.routes[0].geometry;
+      if (!line || !map._container) return;
+      map.removeLayer(fb);
+      const latlngs = line.coordinates.map(c => [c[1], c[0]]);
+      L.polyline(latlngs, { color: "#fff", weight: 6, opacity: .9 }).addTo(map);
+      L.polyline(latlngs, { color: "#C4553A", weight: 3.5, opacity: 1 }).addTo(map);
+      map.fitBounds(L.latLngBounds(latlngs).pad(0.12));
+    } catch (e) { /* keep fallback */ }
+  }
+
+  renderVals() {
+    const { tab, openDay, detail, sheetUp, routeChoice, now } = this.state;
+    const showNotes = this.props.mostraNote ?? true;
+    const target = new Date("2026-10-03T08:00:00").getTime();
+    const diff = Math.max(0, target - now);
+    const pad = n => String(n).padStart(2, "0");
+    const setTab = t => () => this.setState({ tab: t });
+    const days = this.DAYS.map(d => {
+      const open = openDay === d.id;
+      return {
+        ...d, open,
+        onToggle: () => this.setState({ openDay: d.id, dayView: d.id }),
+        chev: "›",
+        border: open ? "2px solid #C4553A" : "1px solid #D6CBB2",
+        bg: `url("${this.IMG[d.hero || (d.attractions[0] && d.attractions[0].img)] || this.IMG.highlands}")`,
+        showNote: open && showNotes && d.notes.length > 0,
+        meta: d.meta.map(m => m.night
+          ? { t: m.t, fg: "#C9963A", bg: "#17324E", bd: "#C9963A" }
+          : { t: m.t, fg: "#17324E", bg: "#E8DEC4", bd: "#D6CBB2" }),
+        attractions: d.attractions.map((a, i) => ({
+          ...a, chicca: !!a.chicca,
+          dot: a.chicca ? "#F3E3BE" : "#FDF7E7",
+          ring: a.chicca ? "#C9963A" : "#C4553A",
+          onOpen: () => this.setState({ detail: { day: d.id, idx: i } }),
+        })),
+      };
+    });
+    let det = null;
+    if (detail) {
+      const base = this.DAYS.find(x => x.id === detail.day);
+      const d = this._activeDay(base);
+      const a = d && d.attractions[detail.idx];
+      if (a) {
+        const isAudio = a.kind === "audio";
+        det = {
+          name: a.name, desc: a.desc, chicca: !!a.chicca,
+          bgImg: `url("${this.IMG[a.img] || this.IMG.highlands}")`,
+          dayLabel: d.dateShort, dayTitle: d.kicker.charAt(0) + d.kicker.slice(1).toLowerCase() + " — " + d.title,
+          ctaKicker: isAudio ? "AUDIOGUIDA" : "CURIOSITÀ",
+          ctaTitle: isAudio ? "Ascolta la storia di questo luogo" : "Scopri la curiosità legata a questo luogo",
+          ctaIcon: isAudio ? "M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13M8 7h7" : "M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z",
+          onCta: () => this.setState({ detail: null, dayView: null, tab: isAudio ? "audioguida" : "curiosita", guide: isAudio ? a.name : this.state.guide, playing: false, prog: 0 }),
+        };
+      }
+    }
+    let dv = null;
+    if (this.state.dayView) {
+      const base = this.DAYS.find(x => x.id === this.state.dayView);
+      const d = this._activeDay(base);
+      if (d) {
+        dv = {
+          ...d,
+          hasRoutes: !!(base && base.routes),
+          routeA: { label:"☀ Piano A", sub:"Sereno / asciutto", onTap: () => this.setState({ routeChoice:"A", detail:null }), bg: routeChoice === "A" ? "#17324E" : "#FDF7E7", fg: routeChoice === "A" ? "#FDF7E7" : "#17324E", bd: routeChoice === "A" ? "#17324E" : "#C6BA9B" },
+          routeB: { label:"☂ Piano B", sub:"Pioggia", onTap: () => this.setState({ routeChoice:"B", detail:null }), bg: routeChoice === "B" ? "#17324E" : "#FDF7E7", fg: routeChoice === "B" ? "#FDF7E7" : "#17324E", bd: routeChoice === "B" ? "#17324E" : "#C6BA9B" },
+          bg: `url("${this.IMG[d.hero || (d.attractions[0] && d.attractions[0].img)] || this.IMG.highlands}")`,
+          showNote: d.notes.length > 0,
+          meta: d.meta.map(m => m.night
+            ? { t: m.t, fg: "#C9963A", bg: "#17324E", bd: "#C9963A" }
+            : { t: m.t, fg: "#17324E", bg: "#E8DEC4", bd: "#D6CBB2" }),
+          attractions: d.attractions.map((a, i) => ({
+            ...a, chicca: !!a.chicca, num: i + 1,
+            dot: a.chicca ? "#F3E3BE" : "#FDF7E7",
+            ring: a.chicca ? "#C9963A" : "#C4553A",
+            onOpen: () => this.setState({ detail: { day: d.id, idx: i } }),
+          })),
+        };
+      }
+    }
+    const tabDefs = [
+      { id:"home", label:"Home", icon:"M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10" },
+      { id:"itinerario", label:"Itinerario", icon:"M9 4L3 6v14l6-2 6 2 6-2V4l-6 2zM9 4v14M15 6v14" },
+      { id:"audioguida", label:"Audioguida", icon:"M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13M8 7h7" },
+      { id:"curiosita", label:"Curiosità", icon:"M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" },
+    ];
+    const MESI = ["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+    const startOf = d => { const n = parseInt(d.dateShort, 10); return new Date(2026, 9, n, 0, 0, 0); };
+    const today = new Date(this.state.now); today.setHours(0, 0, 0, 0);
+    let nd = this.DAYS.find(d => startOf(d) >= today) || null;
+    let next = null;
+    if (nd) {
+      const dd = startOf(nd);
+      const gap = Math.round((dd - today) / 86400000);
+      const a = nd.attractions.find(x => !!this.audioFor(x.name)) || nd.attractions[0];
+      next = {
+        name: a ? a.name : nd.title,
+        zona: a && this.audioFor(a.name) ? this.audioFor(a.name).zona : nd.subtitle,
+        thumb: `url("${(a && this.IMG[a.img]) || this.IMG.highlands}")`,
+        badge: gap === 0 ? "Oggi" : gap === 1 ? "Domani" : dd.getDate() + " " + MESI[dd.getMonth()],
+        onTap: () => this.setState({ tab: "itinerario", dayView: nd.id }),
+      };
+    }
+    const fmt = s => Math.floor(s / 60) + ":" + pad(Math.round(s % 60));
+    const secsOf = a => Math.round(a.paras.join(" ").split(/\s+/).length / 1.75);
+    const audioDays = this.DAYS.map(d => ({
+      label: d.dateShort + " · " + d.title,
+      stops: d.attractions.map(a => ({ a, g: this.audioFor(a.name) })).filter(x => x.g).map(({ a, g }) => ({
+        name: a.name, zona: g.zona, dur: fmt(secsOf(g)) + " min",
+        thumb: `url("${this.IMG[a.img] || this.IMG.highlands}")`,
+        chicca: !!a.chicca,
+        onTap: () => { this._stopSpeech(); this.setState({ guide: a.name, playing: false, prog: 0 }); },
+      })),
+    })).filter(d => d.stops.length);
+    const gname = this.state.guide;
+    const ga = this.audioFor(gname);
+    let gimg = "highlands";
+    if (ga) for (const d of this.DAYS) { const f = d.attractions.find(x => x.name === gname); if (f) { gimg = f.img; break; } }
+    const totSec = ga ? secsOf(ga) : 0;
+    const ag = ga ? {
+      name: gname, zona: ga.zona, diff: ga.diff, durTxt: ga.dur, dist: ga.dist, tip: ga.tip,
+      paras: ga.paras, bg: `url("${this.IMG[gimg] || this.IMG.highlands}")`,
+    } : { name: "", zona: "", diff: "", durTxt: "", dist: "", tip: "", paras: [], bg: "none" };
+    return {
+      isHome: tab === "home" && !det && !dv, isItin: tab === "itinerario",
+      hasDayView: !!dv && !det, dv: dv || { bg: "none", icon: "", dateShort: "", kicker: "", title: "", subtitle: "", go: "", meta: [], attractions: [], notes: [], showNote: false, hasRoutes:false, routeA:{}, routeB:{} },
+      closeDay: () => this.setState({ dayView: null }),
+      sheetTop: sheetUp ? "0px" : "291px",
+      sheetHint: sheetUp ? "▾ Mostra la mappa" : "Dal 3 all'11 Ottobre · 9 giorni",
+      toggleSheet: () => this.setState(s => ({ sheetUp: !s.sheetUp })),
+      isAudio: tab === "audioguida" && !det && !dv && !!ga, isCurio: tab === "curiosita" && !det && !dv,
+      curios: this.CURIOS.map(c => ({ ...c, tagFg: c.accent === "#6E96A8" ? "#3A6577" : c.accent === "#C9963A" ? "#8A5A18" : c.accent, iconBg: c.accent === "#C9963A" ? "rgba(201,148,66,.16)" : c.accent === "#6E96A8" ? "rgba(59,107,106,.14)" : c.accent === "#4C5F2E" ? "rgba(47,74,56,.13)" : c.accent === "#17324E" ? "rgba(31,56,74,.12)" : "rgba(160,59,59,.11)" })),
+      next: next || { name: "", zona: "", thumb: "none", badge: "", onTap: () => {} }, hasNext: !!next,
+      audioDays, ag, hasGuide: !!ga, isAudioList: tab === "audioguida" && !det && !dv && !ga,
+      backToList: () => { this._stopSpeech(); this.setState({ guide: null, playing: false, prog: 0 }); },
+      gTitle: gname || "", gDur: fmt(totSec),
+      togglePlay: this._togglePlay, playIcon: this.state.playing ? "❚❚" : "▶",
+      playProg: Math.round((this.state.prog || 0) * 100) + "%",
+      playElapsed: fmt((this.state.prog || 0) * totSec),
+      goItin: setTab("itinerario"),
+      hasDetail: !!det, det: det || { bgImg: "none", name: "", desc: "", dayLabel: "", dayTitle: "", ctaKicker: "", ctaTitle: "", ctaIcon: "", chicca: false, onCta: () => {} },
+      closeDetail: () => this.setState({ detail: null }),
+      mainMapRef: this.mainMapRef, dayMapRef: this.dayMapRef,
+      cdDays: Math.floor(diff / 86400000),
+      cdH: pad(Math.floor(diff / 3600000) % 24), cdM: pad(Math.floor(diff / 60000) % 60), cdS: pad(Math.floor(diff / 1000) % 60),
+      days,
+      tabs: tabDefs.map(t => ({
+        ...t, onTap: () => this.setState({ tab: t.id, detail: null, dayView: null }),
+        color: tab === t.id ? "#A8442B" : "#4C6577",
+        iconBg: tab === t.id ? "rgba(160,59,59,.12)" : "transparent",
+      })),
+    };
+  }
+}
+</script>
+
+
+</body></html>
